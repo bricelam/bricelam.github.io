@@ -4,8 +4,14 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+![Brice Lambson]({{ site.baseurl }}/attachments/REDMOND_bricelam_LThumb.jpg)
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+Hello, my name is Brice Lambson. I'm a software engineer on the [Entity Framework][1] team at Microsoft. In my spare
+time, I enjoy giving back to the community through blogging and open source. You can usually find me on [Github][2],
+[Stack Overflow][3], or [Twitter][4].
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+
+  [1]: http://msdn.com/data/ef
+  [2]: https://github.com/bricelam
+  [3]: http://stackoverflow.com/users/475031/bricelam
+  [4]: https://twitter.com/bricelambs
