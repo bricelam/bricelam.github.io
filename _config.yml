@@ -6,6 +6,7 @@ baseurl: ""
 url: "http://bricelam.net"
 twitter_username: jekyllrb
 github_username:  jekyll
+disqus_shortname: bricelam
 
 # Build settings
 markdown: kramdown
