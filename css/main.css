@@ -197,17 +197,17 @@ a:visited { color: #205caa; }
   margin: 40px 0 20px;
 }
 
-.post-content h2 {
+.post-content h1 {
   font-size: 32px;
   letter-spacing: -1.25px;
 }
 
-.post-content h3 {
+.post-content h2 {
   font-size: 26px;
   letter-spacing: -1px;
 }
 
-.post-content h4 {
+.post-content h3 {
   font-size: 20px;
   letter-spacing: -1px;
 }
@@ -394,9 +394,9 @@ a:visited { color: #205caa; }
   }
 
   .post-header h1 { font-size: 36px; }
-  .post-content h2 { font-size: 28px; }
-  .post-content h3 { font-size: 22px; }
-  .post-content h4 { font-size: 18px; }
+  .post-content h1 { font-size: 28px; }
+  .post-content h2 { font-size: 22px; }
+  .post-content h3 { font-size: 18px; }
   .post-content blockquote { padding-left: 10px; }
   .post-content ul,
   .post-content ol { padding-left: 10px; }
