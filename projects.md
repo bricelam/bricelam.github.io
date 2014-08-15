@@ -16,11 +16,11 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
-* [System.Data.SQLite][4] - Helped add support for Entity Framework 6.0 (*2014*)
-* [xUnit.net][5] - Added trait-based filtering to the console runner (*2013*)
+* [System.Data.SQLite][4] - Helped add support for Entity Framework 6 (*2014*)
+* [xUnit.net][5] - Added trait-based filtering to the MSBuild runner (*2013*)
 * [Git for Windows][6] - Helped fix a bug with line ending normalization (*2013*)
 * [Chinook Database][7] - Added support for PostgreSQL (*2012*)
-* [RIA Services][8] - Helped add support for Entity Framework 5.0 (*2012*)
+* [RIA Services][8] - Helped add support for Entity Framework 5 (*2012*)
 * [Scripting Layer for Android][9] - Added support for JavaScript (*2009*)
 
 
