@@ -86,6 +86,11 @@ The `Update-Database` command has been split into two new commands.
 * `Apply-Migration` applies migrations to the database
 * `Script-Migration` generates a SQL script to apply the migrations to the database
 
+New Platforms
+-------------
+EF7 is being built for new platforms including Windows 8.1 and Windows Phone 8.1. I'm happy to say that, in addition to
+the Windows Desktop projects, the commands will also work with Windows, Windows Phone, and Portable projects.
+
 Feedback
 ========
 As always, please let us know what you think about this and other Entity Framework 7 features by commenting on [our
