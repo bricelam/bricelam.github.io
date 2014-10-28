@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Entity Framework 7 Migrations in ASP.NET 5
+title: 'EF7 Migrations: ASP.NET Commands'
 tags: entity-framework
 ---
 
@@ -8,7 +8,7 @@ One of the [new platforms][1] that we're targeting in Entity Framework 7 is [ASP
 comes a new set of challenges for how we enable the Migrations commands. Ever since Entity Framework 4.3, we've
 provided a set of PowerShell commands that could be run in Visual Studio from [NuGet's Package Manager Console][3].
 However, that won't help you if you're developing on OSX where neither PowerShell nor Visual Studio are available. This
-post will show you how to use the new Migrations KRE commands.
+post will show you how to use the new Migrations ASP.NET commands.
 
 Installing
 ==========
@@ -36,7 +36,7 @@ cd src\MyProject
 k ef
 {% endhighlight %}
 
-![Migrations KRE Commands]({{ site.baseurl }}/attachments/EFCommands.png)
+![Migrations ASP.NET Commands]({{ site.baseurl }}/attachments/EFCommands.png)
 
 Using
 =====

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EF7 NuGet Commands
+title: 'EF7 Migrations: NuGet Commands'
 tags: entity-framework
 ---
 
