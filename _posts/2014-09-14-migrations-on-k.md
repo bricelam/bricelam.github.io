@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Entity Framework 7 Migrations in ASP.NET vNext
+title: Entity Framework 7 Migrations in ASP.NET 5
 tags: entity-framework
 ---
 
-One of the [new platforms][1] that we're targeting in Entity Framework 7 is [ASP.NET vNext][2]. With this new platform
+One of the [new platforms][1] that we're targeting in Entity Framework 7 is [ASP.NET 5][2]. With this new platform
 comes a new set of challenges for how we enable the Migrations commands. Ever since Entity Framework 4.3, we've
 provided a set of PowerShell commands that could be run in Visual Studio from [NuGet's Package Manager Console][3].
 However, that won't help you if you're developing on OSX where neither PowerShell nor Visual Studio are available. This
@@ -40,7 +40,7 @@ k ef
 
 Using
 =====
-To see what sub-commands are available for the `migration` command, type `k ef help migration`. There are just two for
+To see what sub-commands are available for the `migration` command, type `k ef migration --help`. There are just two for
 now, but more will come in the next release.
 
 * `add`--Add a new migration
