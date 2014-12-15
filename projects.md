@@ -17,7 +17,7 @@ Part of being a good citizen in the open source community is regularly contribut
 a list of contributions that I've made to various projects.
 
 * [xUnit.net][5]
-    * Added support for ASP.NET vNext (*2014*)
+    * Added support for ASP.NET 5 (*2014*)
     * Added trait-based filtering to the MSBuild runner (*2013*)
 * [System.Data.SQLite][4] - Helped add support for Entity Framework 6 (*2014*)
 * [Git for Windows][6] - Helped fix a bug with line ending normalization (*2013*)
