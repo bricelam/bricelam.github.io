@@ -5,12 +5,12 @@ title: Command Prompt is Ugly
 
 As a developer, I spend a fair amount of time in Command Prompt. Let's face it, it's ugly.
 
-![Command Prompt]({{ site.baseurl }}/attachments/CommandPromptOriginal.png)
+![Command Prompt]({{ "/attachments/CommandPromptOriginal.png" | prepend: site.baseurl | prepend: site.url }})
 
 Luckily, all of the font, colors, and sizes are configurable. I use an Ubuntu-based theme which, I think, looks
 significantly better.
 
-![Themed Command Prompt]({{ site.baseurl }}/attachments/CommandPromptThemed.png)
+![Themed Command Prompt]({{ "/attachments/CommandPromptThemed.png" | prepend: site.baseurl | prepend: site.url }})
 
 Here are the registration entries you can use to apply it.
 

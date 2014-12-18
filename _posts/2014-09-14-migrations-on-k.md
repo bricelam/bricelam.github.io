@@ -36,7 +36,7 @@ cd src\MyProject
 k ef
 {% endhighlight %}
 
-![Migrations ASP.NET Commands]({{ site.baseurl }}/attachments/EFCommands.png)
+![Migrations ASP.NET Commands]({{ "/attachments/EFCommands.png" | prepend: site.baseurl | prepend: site.url }})
 
 Using
 =====

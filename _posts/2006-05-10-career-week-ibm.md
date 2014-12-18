@@ -4,7 +4,7 @@ title: "Career Week: IBM"
 permalink: /2006/05/career-week-ibm.html
 ---
 
-![IBM]({{ site.baseurl }}/attachments/ibm.jpg)
+![IBM]({{ "/attachments/ibm.jpg" | prepend: site.baseurl | prepend: site.url }})
 
 Jim Reach of [IBM][1] spoke today. Food was provided by [Chick-fil-A][2].
 

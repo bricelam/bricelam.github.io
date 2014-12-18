@@ -7,7 +7,7 @@ tags: image-resizer
 
 I just released another version of my [Image Resizer][1]. Here's a screenshot.
 
-![Image Resizer 3 Preview 3 Screenshot]({{ site.baseurl }}/attachments/ImageResizer3Preview3.png)
+![Image Resizer 3 Preview 3 Screenshot]({{ "/attachments/ImageResizer3Preview3.png" | prepend: site.baseurl | prepend: site.url }})
 
 As you can see, there are a couple of new features. You can select a resize mode of either *Scale to* or *Stretch to*
 (for those who don't care about maintaining the aspect ratio of their pictures). You can select a size unit of *Pixels*,

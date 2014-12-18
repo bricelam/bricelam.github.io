@@ -9,7 +9,7 @@ Lately, I've been working on version 3 of my [Image Resizer][1]. I think I'm fin
 (your feedback is welcomed). The text may change a bit for the final release, and I might add a footer to the dialog,
 but I'm pretty happy with the way it's looking.
 
-![Image Resizer 3 CTP Screenshot]({{ site.baseurl }}/attachments/ImageResizer3Ctp.png)
+![Image Resizer 3 CTP Screenshot]({{ "/attachments/ImageResizer3Ctp.png" | prepend: site.baseurl | prepend: site.url }})
 
 The Advanced settings link will pop up another dialog box that will let you set things like the following.
 
