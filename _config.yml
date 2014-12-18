@@ -8,6 +8,7 @@ twitter_username: bricelambs
 github_username:  bricelam
 disqus_shortname: bricelam
 jobtitle: Software Engineer II
+google_analytics_tracking_id: UA-57792437-1
 
 # Build settings
 markdown: kramdown
