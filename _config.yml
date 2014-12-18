@@ -11,7 +11,6 @@ jobtitle: Software Engineer II
 
 # Build settings
 markdown: kramdown
-permalink: pretty
 gems:
   - jekyll-mentions
   - jekyll-redirect-from

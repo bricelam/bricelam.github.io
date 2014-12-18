@@ -1,39 +1,39 @@
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
+
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
-
     <script type="text/javascript">
-      var disqus_shortname = '{{ site.disqus_shortname }}';
-    </script>
-    
-    <script type='text/javascript'>
-      var googletag = googletag || {};
-      googletag.cmd = googletag.cmd || [];
-      (function() {
-          var gads = document.createElement('script');
-          gads.async = true;
-          gads.type = 'text/javascript';
-          var useSSL = 'https:' == document.location.protocol;
-          gads.src = (useSSL ? 'https:' : 'http:') + 
-              '//www.googletagservices.com/tag/js/gpt.js';
-          var node = document.getElementsByTagName('script')[0];
-          node.parentNode.insertBefore(gads, node);
-      })();
+    var disqus_shortname = '{{ site.disqus_shortname }}';
     </script>
 
     <script type='text/javascript'>
-      googletag.cmd.push(function() {
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+        '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+    </script>
+
+    <script type='text/javascript'>
+    googletag.cmd.push(function() {
         googletag.defineSlot('/6839/lqm.bricelambson.site/ron', [160, 600], 'div-gpt-ad-1407985150189-0').addService(googletag.pubads());
         googletag.pubads().enableSingleRequest();
         googletag.enableServices();
-      });
+    });
     </script>
 
 </head>
