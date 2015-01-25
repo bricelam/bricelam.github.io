@@ -7,7 +7,7 @@ As a developer, I spend a fair amount of time in Command Prompt. Let's face it, 
 
 ![Command Prompt]({{ "/attachments/CommandPromptOriginal.png" | prepend: site.baseurl | prepend: site.url }})
 
-Luckily, all of the font, colors, and sizes are configurable. I use an Ubuntu-based theme which, I think, looks
+Luckily, all of the font, colors, and sizes are configurable. I use the following theme which, I think, looks
 significantly better.
 
 ![Themed Command Prompt]({{ "/attachments/CommandPromptThemed.png" | prepend: site.baseurl | prepend: site.url }})
