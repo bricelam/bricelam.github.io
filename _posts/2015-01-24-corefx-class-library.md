@@ -11,10 +11,10 @@ How do I use it?
 ================
 Unfortunately, there aren't any tools to help you create .NET Core class libraries yet. The ASP.NET 5 tools inside
 Visual Studio 2015 allow you to create ASP.NET Core class libraries, but these are subtly different. They are .NET Core
-class libraries that are only intended to be run on ASP.NET 5. ~~A special compile step is performed that can make your
-assemblies incompatible with other .NET Core platforms~~. (**Update:** This feature has been removed) The tools also don't enable you to create portable class
-libraries, but instead cross-compile to each platform (similar to how shared projects work). ~~They also don't enable you
-to strong-name the assemblies.~~ (**Update:** This feature is being added)
+class libraries that are only intended to be run on ASP.NET 5. <span style="text-decoration: line-through;">A special compile step is performed that can make your
+assemblies incompatible with other .NET Core platforms</span>. (**Update:** This feature has been removed) The tools also don't enable you to create portable class
+libraries, but instead cross-compile to each platform (similar to how shared projects work). <span style="text-decoration: line-through;">They also don't enable you
+to strong-name the assemblies.</span> (**Update:** This feature is being added)
 
 One assembly to rule them all
 =============================
