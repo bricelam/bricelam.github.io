@@ -65,7 +65,10 @@ You can even reference *new* contracts like `System.IO.FileSystem` and `System.T
 
 Happy coding.
 
+**Update**: I've created a Visual Studio 2013 & 2015 project template to do this for you. Find it on the [Visual Studio Gallery][4].
+
 
   [1]: http://blogs.msdn.com/b/dotnet/archive/2014/12/04/introducing-net-core.aspx
   [2]: https://github.com/dotnet/corefx
   [3]: http://docs.nuget.org/docs/start-here/using-the-package-manager-console
+  [4]: https://visualstudiogallery.msdn.microsoft.com/d58b9e24-80c4-4269-92ea-c18ad7d379eb
