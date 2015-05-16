@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'EF7 Migrations: ASP.NET Commands'
+title: 'EF7 Migrations: DNX Commands'
 tags: entity-framework
 ---
 
@@ -8,7 +8,7 @@ One of the [new platforms][1] that we're targeting in Entity Framework 7 is [ASP
 comes a new set of challenges for how we enable the Migrations commands. Ever since Entity Framework 4.3, we've
 provided a set of PowerShell commands that could be run in Visual Studio from [NuGet's Package Manager Console][3].
 However, that won't help you if you're developing on OSX where neither PowerShell nor Visual Studio are available. This
-post will show you how to use the new Migrations ASP.NET commands.
+post will show you how to use the new Migrations DNX commands.
 
 Installing
 ==========
@@ -31,29 +31,31 @@ Once you've done this, you should be able to restore packages, change directory 
 containing the project.json file), and run the command.
 
 {% highlight bat %}
-kpm restore
+dnu restore
 cd src\MyProject
-k ef
+dnx . ef
 {% endhighlight %}
 
 ![Migrations ASP.NET Commands]({{ "/attachments/EFCommands.png" | prepend: site.baseurl | prepend: site.url }})
 
 Using
 =====
-To see what sub-commands are available for the `migration` command, type `k ef migration --help`. There are just two for
-now, but more will come in the next release.
+To see what sub-commands are available for the `migration` command, type `dnx . ef migration --help`. For now, there are five
+commands.
 
 * `add`--Add a new migration
 * `apply`--Apply migrations to the database
+* `list`--List the migrations
+* `script`--Generate a SQL script from migrations
+* `remove`--Remove the last migration
 
-To see the usage of the `add` command, type `k ef migration add --help`.
+To see the usage of the `add` command, type `dnx . ef migration add --help`.
 
-To add a new migration, type `k ef migration add MyMigration`.
+To add a new migration, type `dnx . ef migration add MyMigration`.
 
 Evolving
 ========
-There are still some rough edges, but we wanted to get preview of the new commands out in time for the alpha4 release.
-Please [let us know][4] what you think about this and other Entity Framework 7 features.
+There are still some rough edges, but please [let us know][4] what you think about this and other Entity Framework 7 features.
 
 
   [1]: http://blogs.msdn.com/b/adonet/archive/2014/05/19/ef7-new-platforms-new-data-stores.aspx
