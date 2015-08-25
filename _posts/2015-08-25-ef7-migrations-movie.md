@@ -1,0 +1,37 @@
+---
+layout: post
+title: 'EF7 Migrations: The Movie'
+tags: entity-framework
+---
+
+Channel 9's Seth Juarez had a chance to invade our team room and capture some rare footage of the EF magic unicorns in
+their natural habitat. I got to show some of the improvements we've been making to Migrations. Here's the video.
+
+<div style="width: 100%; text-align: center;">
+  <iframe src="https://channel9.msdn.com/Blogs/Seth-Juarez/Migrations-in-Entity-Framework-7-with-Brice-Lambson/player"
+          width="640"
+          height="360"
+          allowFullScreen
+          frameBorder="0">
+  </iframe>
+</div>
+<br />
+
+Be sure to check out some of the other clips too!
+
+- [An Introduction to Entity Framework with Rowan Miller][1]
+- [The future of Entity Framework (EF7)][2]
+- [SQL Generation Improvements in Entity Framework 7][3]
+- [Alternate Keys in Entity Framework 7][4]
+- [Key Generation Strategies in Entity Framework 7][5]
+- [Shadow Properties in Entity Framework 7][6]
+- [Entity Framework 7 Goes Cross Platform with Nate McMaster][7]
+
+
+  [1]: https://channel9.msdn.com/Blogs/Seth-Juarez/An-Introduction-to-Entity-Framework-with-Rowan-Miller
+  [2]: https://channel9.msdn.com/Blogs/Seth-Juarez/The-future-of-Entity-Framework-EF7
+  [3]: https://channel9.msdn.com/Blogs/Seth-Juarez/SQL-Generation-Improvements-in-Entity-Framework-7
+  [4]: https://channel9.msdn.com/Blogs/Seth-Juarez/Alternate-Keys-in-Entity-Framework-7
+  [5]: https://channel9.msdn.com/Blogs/Seth-Juarez/Key-Generation-Strategies-in-Entity-Framework-7
+  [6]: https://channel9.msdn.com/Blogs/Seth-Juarez/Shadow-Properties-in-Entity-Framework-7
+  [7]: https://channel9.msdn.com/Blogs/Seth-Juarez/Entity-Framework-7-Goes-Cross-Platform-with-Nate-McMaster
