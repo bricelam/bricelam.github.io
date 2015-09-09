@@ -9,10 +9,15 @@ github_username:  bricelam
 disqus_shortname: bricelam
 jobtitle: Senior Software Engineer
 google_analytics_tracking_id: UA-57792437-1
+name: Brice's Blog
+author:
+  name: Brice Lambson
+  email: bricelam@outlook.com
 
 # Build settings
 markdown: kramdown
 gems:
+  - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
