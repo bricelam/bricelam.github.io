@@ -33,29 +33,35 @@ containing the project.json file), and run the command.
 {% highlight bat %}
 dnu restore
 cd src\MyProject
-dnx . ef
+dnx ef
 {% endhighlight %}
 
 ![Migrations ASP.NET Commands]({{ "/attachments/EFCommands.png" | prepend: site.baseurl | prepend: site.url }})
 
 Using
 =====
-To see what sub-commands are available for the `migration` command, type `dnx . ef migration --help`. For now, there are five
-commands.
+To see what sub-commands are available for the `migrations` command, type `dnx ef migrations --help`.
 
-* `add`--Add a new migration
-* `apply`--Apply migrations to the database
-* `list`--List the migrations
-* `script`--Generate a SQL script from migrations
-* `remove`--Remove the last migration
+To see the usage of the `add` command, type `dnx ef migrations add --help`.
 
-To see the usage of the `add` command, type `dnx . ef migration add --help`.
+To add a new migration, type `dnx ef migrations add MyMigration`.
 
-To add a new migration, type `dnx . ef migration add MyMigration`.
+Here is a full list of the commands currently available.
+
+* `database`
+    * `update`--Updates the database to a specified migration
+* `dbcontext`
+    * `list`--List your DbContext types
+    * `scaffold`--Scaffolds a DbContext and entity type classes for a specified database
+* `migrations`
+    * `add`--Add a new migration
+    * `list`--List the migrations
+    * `remove`--Remove the last migration
+    * `script`--Generate a SQL script from migrations
 
 Evolving
 ========
-There are still some rough edges, but please [let us know][4] what you think about this and other Entity Framework 7 features.
+There may be a few rough edges, but please [let us know][4] what you think about this and other Entity Framework 7 features.
 
 
   [1]: http://blogs.msdn.com/b/adonet/archive/2014/05/19/ef7-new-platforms-new-data-stores.aspx
