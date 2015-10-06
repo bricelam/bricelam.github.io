@@ -1,18 +1,16 @@
 # Site settings
-title: Brice's Blog
-email: bricelam@outlook.com
+name: Brice's Blog
 description: Highlighting some of my more technical adventures
 baseurl: ""
 url: "http://www.bricelam.net"
-twitter_username: bricelambs
-github_username:  bricelam
 disqus_shortname: bricelam
-jobtitle: Senior Software Engineer
 google_analytics_tracking_id: UA-57792437-1
-name: Brice's Blog
 author:
   name: Brice Lambson
   email: bricelam@outlook.com
+  title: Senior Software Engineer
+  twitter: bricelambs
+  github:  bricelam
 
 # Build settings
 markdown: kramdown
