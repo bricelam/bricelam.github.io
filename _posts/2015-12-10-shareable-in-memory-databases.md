@@ -15,7 +15,8 @@ Here is an example demonstrating how you can use them.
 // Databases are shared by using the same Data Source name
 var connectionString = "Data Source=sharedmemdb;Mode=Memory;Cache=Shared";
 
-// The first connection controls the lifetime of the database. When it's closed, the database is deleted
+// The first connection controls the lifetime of the database. When it's closed, the
+// database is deleted
 using (var connection1 = new SqliteConnection(connectionString))
 {
     connection1.Open();
