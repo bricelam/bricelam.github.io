@@ -18,37 +18,37 @@ The [SkyDrive apps][1] for Windows and Mac create a special directory on your co
 SkyDrive and your other computers. I decided to create my fork there. Here is an example of forking my [Image
 Resizer][2] project to SkyDrive.
 
-{% highlight bat %}
+```
 # Create a SkyDrive fork
 cd %USERPROFILE%\SkyDrive
 git clone --bare https://git01.codeplex.com/imageresizer
-{% endhighlight %}
+```
 
 Note that this is a bare repository. Don't edit these files directly.
 
 After creating the fork, add it as a remote to your existing clone. Here is an example of creating another clone of the
 ImageResizer repository and adding the skydrive remote. Do this outside the SkyDrive directory.
 
-{% highlight bat %}
+```
 # Add SkyDrive fork as a remote to a new clone
 git clone https://git01.codeplex.com/imageresizer
 cd imageresizer
 git remote add skydrive %USERPROFILE%\SkyDrive\imageresizer.git
-{% endhighlight %}
+```
 
 To share work between computers, push your changes to the fork.
 
-{% highlight bat %}
+```
 # Push to SkyDrive fork
 git push skydrive work
-{% endhighlight %}
+```
 
 To get those changes on another computer, wait for SkyDrive to finish syncing and pull them.
 
-{% highlight bat %}
+```
 # Pull from SkyDrive fork
 git pull skydrive work
-{% endhighlight %}
+```
 
 There you have it, your very own SkyDrive fork! Now, what else can we do to eliminate that USB flash drive from our
 lives for good?

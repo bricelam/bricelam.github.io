@@ -18,14 +18,14 @@ An experiment
 =============
 Here is some simple code that prints out version information about the Entity Framework assembly.
 
-{% highlight csharp %}
+```csharp
 var assembly = typeof(DbContext).Assembly;
 var name = assembly.GetName();
 var info = FileVersionInfo.GetVersionInfo(assembly.Location);
 
 Console.WriteLine("Assembly Version: {0}", name.Version);
 Console.WriteLine("Product Version: {0}", info.ProductVersion);
-{% endhighlight %}
+```
 
 When we run the code on an application targeting .NET Framework 4.5, we get the following output.
 

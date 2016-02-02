@@ -11,12 +11,12 @@ Here is a simple, token-replacement template engine for PowerShell that you migh
 
 You use it like this.
 
-{% highlight powershell %}
+```powershell
 Merge-Tokens 'Hello, $target$! My name is $self$.' @{
         Target = 'World'
         Self = 'Brice'
     }
-{% endhighlight %}
+```
 
 The output of that command, as you would expect, is this.
 

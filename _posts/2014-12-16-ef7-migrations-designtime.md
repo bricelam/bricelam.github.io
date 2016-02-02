@@ -40,14 +40,14 @@ By removing automatic migrations in EF7, we're able to...
 
 To see just how awesome all of this is, try the following.
 
-{% highlight powershell %}
+```powershell
 Add-Migration M1
 # (Tweak the model)
 Add-Migration M2 # Would fail on EF6
 # (Tweak the model)
 Add-Migration M3
 Apply-Migration # Applies M1, M2 & M3
-{% endhighlight %}
+```
 
 Model Snapshots
 ===============

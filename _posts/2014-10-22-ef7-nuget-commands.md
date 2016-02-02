@@ -70,10 +70,10 @@ Use-DbContext
 We went one step farther and added the `Use-DbContext` command. This command allow you to specify a default DbContext to
 use for the current PowerShell session. I like to call this the Luke command.
 
-{% highlight powershell %}
+```powershell
 Use-DbContext UnicornContext
 Add-Migration TwentyPercentCooler
-{% endhighlight %}
+```
 
 Less Is More
 ------------

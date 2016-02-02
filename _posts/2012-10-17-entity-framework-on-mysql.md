@@ -30,7 +30,7 @@ Specifically, we will be using Artists and Albums.
 
 Add the following two classes to your project.
 
-{% highlight csharp %}
+```csharp
 public class Artist
 {
     public Artist()
@@ -52,7 +52,7 @@ public class Album
     public int ArtistId { get; set; }
     public virtual Artist Artist { get; set; }
 }
-{% endhighlight %}
+```
 
 Create a Context
 ================
@@ -67,13 +67,13 @@ install Entity Framework.
 
 Now, add the context class to your project.
 
-{% highlight csharp %}
+```csharp
 class ChinookContext : DbContext
 {
     public DbSet<Artist> Artists { get; set; }
     public DbSet<Album> Albums { get; set; }
 }
-{% endhighlight %}
+```
 
 Install the Provider
 ====================
@@ -85,7 +85,7 @@ Luckily, the provider we're using is available via NuGet.
 We also need to register the provider. Open App.config, and anywhere inside the `configuration` element, add the
 following fragment.
 
-{% highlight xml %}
+```xml
 <system.data>
   <DbProviderFactories>
     <add name="MySQL Data Provider"
@@ -94,27 +94,27 @@ following fragment.
          type="MySql.Data.MySqlClient.MySqlClientFactory, MySql.Data" />
   </DbProviderFactories>
 </system.data>
-{% endhighlight %}
+```
 
 Add a Connection String
 =======================
 In order to connect to the right database, we need to add a connection string to the App.Config. Anywhere inside the
 `configuration` element, add the following fragment.
 
-{% highlight xml %}
+```xml
 <connectionStrings>
   <add name="ChinookContext"
         connectionString=
 "server=localhost;database=Chinook;User Id=root;password=P4ssw0rd"
         providerName="MySql.Data.MySqlClient" />
 </connectionStrings>
-{% endhighlight %}
+```
 
 Start Coding
 ============
 Ok, we should be ready to start coding our application. Let's create some artists and albums.
 
-{% highlight csharp %}
+```csharp
 using (var db = new ChinookContext())
 {
     db.Artists.Add(
@@ -139,11 +139,11 @@ using (var db = new ChinookContext())
     db.Artists.Add(new Artist { Name = "Avril Lavigne" });
     db.SaveChanges();
 }
-{% endhighlight %}
+```
 
 Now let's see how to read the data from the database.
 
-{% highlight csharp %}
+```csharp
 using (var db = new ChinookContext())
 {
     var artists = from a in db.Artists
@@ -156,11 +156,11 @@ using (var db = new ChinookContext())
         Console.WriteLine(artist.Name);
     }
 }
-{% endhighlight %}
+```
 
 Finally, here is some code that updates and deletes some data.
 
-{% highlight csharp %}
+```csharp
 using (var db = new ChinookContext())
 {
     var police = db.Artists.Single(a => a.Name == "The Police");
@@ -171,7 +171,7 @@ using (var db = new ChinookContext())
 
     db.SaveChanges();
 }
-{% endhighlight %}
+```
 
 Conclusion
 ==========

@@ -20,7 +20,7 @@ This the simplest extensibility point. It's used to decorate a test method with 
 samples, they create a `Category` attribute that is based on `TraitAttribute`. A more useful implementation, perhaps, is
 to keep track of the bug a particular regression test is for. Your custom attribute might look something like this.
 
-{% highlight csharp %}
+``` csharp
 class BugAttribute : TraitAttribute
 {
     public BugAttribute(string id)
@@ -28,17 +28,17 @@ class BugAttribute : TraitAttribute
     {
     }
 }
-{% endhighlight %}
+```
 
 You would then apply it to a test like this.
 
-{% highlight csharp %}
+```csharp
 [Fact, Bug("3569")]
 public void RegressionTest()
 {
     // Test code here
 }
-{% endhighlight %}
+```
 
 IUseFixture<>
 =============
@@ -49,7 +49,7 @@ after the last test is run.
 
 Here is an example of how to use a fixture.
 
-{% highlight csharp %}
+```csharp
 public class UserRepositoryTests : IUseFixture<DatabaseFixture>
 {
     DatabaseFixture _database;
@@ -80,7 +80,7 @@ public class UserRepositoryTests : IUseFixture<DatabaseFixture>
         // More test code here
     }
 }
-{% endhighlight %}
+```
 
 BeforeAfterTestAttribute
 ========================
@@ -88,7 +88,7 @@ Tests can have cross-cutting concerns too. That's where `BeforeAfterTestAttribut
 hooks - `Before` and `After` - that get called each time a test method is executed. Here is an example implementation
 for tracing.
 
-{% highlight csharp %}
+```csharp
 class TraceAttribute : BeforeAfterTestAttribute
 {
     public override void Before(MethodInfo methodUnderTest)
@@ -109,7 +109,7 @@ class TraceAttribute : BeforeAfterTestAttribute
                 methodUnderTest.Name));
     }
 }
-{% endhighlight %}
+```
 
 The [xUnit.net: Extensions][3] ship with this and a couple other useful implementations:
 
@@ -118,20 +118,20 @@ The [xUnit.net: Extensions][3] ship with this and a couple other useful implemen
 
 Using one of these attributes looks like this.
 
-{% highlight csharp %}
+```csharp
 [Fact, Trace]
 public void TestWithTracing()
 {
     // Test code here
 }
-{% endhighlight %}
+```
 
 FactAttribute
 =============
 By now, you're more than familiar with the `Fact` attribute, but did you know that you can also create your own
 attributes that derive from it? Here is an example that repeats a test for the specified number of times.
 
-{% highlight csharp %}
+```csharp
 class RepeatTestAttribute : FactAttribute
 {
     readonly int _count;
@@ -148,7 +148,7 @@ class RepeatTestAttribute : FactAttribute
             .SelectMany(tc => Enumerable.Repeat(tc, _count));
     }
 }
-{% endhighlight %}
+```
 
 The above example just passes the underlying `ITestCommand` directly through, but you can access a whole host of other
 extensibility points by creating your own implementation. The extensions' `TheoryAttribute` in conjunction with the
@@ -156,20 +156,20 @@ extensibility points by creating your own implementation. The extensions' `Theor
 
 Applying your custom attribute is not different than you'd expect.
 
-{% highlight csharp %}
+```csharp
 [RepeatTest(5)]
 public void MyRepeatedTest()
 {
     // Test code to repeat here
 }
-{% endhighlight %}
+```
 
 RunWithAttribute
 ================
 The final and most advanced extensibility point is the `RunWithAttribute`. The attribute itself is very simple; all it
 does is point to a class that implements `ITestClassCommand`.
 
-{% highlight csharp %}
+```csharp
 class PrioritizedFixtureAttribute : RunWithAttribute
 {
     public PrioritizedFixtureAttribute()
@@ -177,11 +177,11 @@ class PrioritizedFixtureAttribute : RunWithAttribute
     {
     }
 }
-{% endhighlight %}
+```
 
 The real power is in the target class. Here is one example that runs a set of tests in order of their priority.
 
-{% highlight csharp %}
+```csharp
 class PrioritizedFixtureClassCommand : ITestClassCommand
 {
     // The default implementation.
@@ -228,12 +228,12 @@ class TestPriorityAttribute : Attribute
         get { return _priority; }
     }
 }
-{% endhighlight %}
+```
 
 The `TestPriority` attribute is used to influence how the tests are ran. Here's what your test code might look like
 after putting it all together.
 
-{% highlight csharp %}
+```csharp
 [PrioritizedFixture]
 public class MyTests
 {
@@ -249,7 +249,7 @@ public class MyTests
         // Test code here is run second
     }
 }
-{% endhighlight %}
+```
 
 
   [1]: http://xunit.codeplex.com

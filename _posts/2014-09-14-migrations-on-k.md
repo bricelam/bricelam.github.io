@@ -16,7 +16,7 @@ In EF7, we're striving for a more modular design. This has resulted in more fine
 Migrations commands are contained in the EntityFramework.Commands package. To use it, add it as a dependency to your
 project.json file as well as a corresponding command.
 
-{% highlight json %}
+```json
 {
     "dependencies": {
         "EntityFramework.Commands": "7.0.0-*"
@@ -25,16 +25,16 @@ project.json file as well as a corresponding command.
         "ef": "EntityFramework.Commands"
     }
 }
-{% endhighlight %}
+```
 
 Once you've done this, you should be able to restore packages, change directory into your project (the directory
 containing the project.json file), and run the command.
 
-{% highlight bat %}
+```
 dnu restore
 cd src\MyProject
 dnx ef
-{% endhighlight %}
+```
 
 ![Migrations ASP.NET Commands]({{ "/attachments/EFCommands.png" | prepend: site.baseurl | prepend: site.url }})
 

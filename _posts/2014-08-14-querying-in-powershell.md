@@ -11,7 +11,7 @@ operators.
 In PowerShell, you pipe commands together and pump data through them to get a result. In order to do this, we need some
 data. Here's some data loosely based on the [Chinook Database][4], my favorite sample database.
 
-{% highlight powershell %}
+```powershell
 $albums = @(
     [PSCustomObject]@{
         Artist = 'Anberlin'
@@ -34,80 +34,80 @@ $albums = @(
         Tracks = 14
     }
 )
-{% endhighlight %}
+```
 
 Projecting
 ==========
 To project only certain properties of objects, use the `select` command. Here is an example of selecting just the Artist
 properties.
 
-{% highlight powershell %}
+```powershell
 $albums | select Artist
-{% endhighlight %}
+```
 
 You can select only distinct results using the `-Unique` parameter.
 
-{% highlight powershell %}
+```powershell
 $albums | select Artist -Unique
-{% endhighlight %}
+```
 
 Paging
 ======
 You can also page results using the `select` command's `-Skip`, `-First`, and `-Last` parameters. Here's how to get the
 first album.
 
-{% highlight powershell %}
+```powershell
 $albums | select -First 1
-{% endhighlight %}
+```
 
 Here's how to get the second album.
 
-{% highlight powershell %}
+```powershell
 $albums | select -First 1 -Skip 1
-{% endhighlight %}
+```
 
 Here's how to get the last one.
 
-{% highlight powershell %}
+```powershell
 $albums | select -Last 1
-{% endhighlight %}
+```
 
 Filtering
 =========
 Filtering, like in most languages, is done using the `where` command. The following is an example of selecting all the
 albums with an artist who's name starts with an *A*.
 
-{% highlight powershell %}
+```powershell
 $albums | where Artist -like 'A*'
-{% endhighlight %}
+```
 
 You can also do it as an expression which allows for more complex filtering.
 
-{% highlight powershell %}
+```powershell
 $albums | where { $_.Artist.StartsWith('A') }
-{% endhighlight %}
+```
 
 Ordering
 ========
 To order the results, use the `sort` command. Let's order the albums by number of tracks.
 
-{% highlight powershell %}
+```powershell
 $albums | sort Tracks
-{% endhighlight %}
+```
 
 Now, let's do it in descending order.
 
-{% highlight powershell %}
+```powershell
 $albums | sort Tracks -Descending
-{% endhighlight %}
+```
 
 Grouping
 ========
 Grouping is accomplished using the `group` command. Let's group the albums by artist.
 
-{% highlight powershell %}
+```powershell
 $albums | group Artist
-{% endhighlight %}
+```
 
 Aggregating
 ===========
@@ -115,27 +115,27 @@ Basic aggregation can be done using the `measure` command.
 
 Use the `-Average` parameter to get the average.
 
-{% highlight powershell %}
+```powershell
 $albums | measure Tracks -Average
-{% endhighlight %}
+```
 
 To get the maximum value use `-Maximum`.
 
-{% highlight powershell %}
+```powershell
 $albums | measure Tracks -Maximum
-{% endhighlight %}
+```
 
 To get the maximum value use `-Maximum`.
 
-{% highlight powershell %}
+```powershell
 $albums | measure Tracks -Minimum
-{% endhighlight %}
+```
 
 Finally, to get the summation of all values, use `-Sum`.
 
-{% highlight powershell %}
+```powershell
 $albums | measure Tracks -Sum
-{% endhighlight %}
+```
 
 More
 ====

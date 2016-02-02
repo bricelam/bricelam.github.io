@@ -14,7 +14,7 @@ Usage
 The provider is built on top of the [System.Data.Common][2] contract. This contract is a very small subset of the ADO.NET provider
 model. Using the provider should feel very natural to anyone familiar with ADO.NET.
 
-{% highlight csharp %}
+```csharp
 using (var connection = new SqliteConnection("" +
     new SqliteConnectionStringBuilder
     {
@@ -46,7 +46,7 @@ using (var connection = new SqliteConnection("" +
         transaction.Commit();
     }
 }
-{% endhighlight %}
+```
 
 Batching
 --------
@@ -54,7 +54,7 @@ The only real feature that the library adds to the native SQLite interfaces is b
 compiling and executing one statement at a time. This library implements batching in a way that should feel completely
 transparent. Here is an example of using batching.
 
-{% highlight csharp %}
+```csharp
 using (var connection = new SqliteConnection("Data Source=hello.db"))
 {
     var command = connection.CreateCommand();
@@ -67,7 +67,7 @@ using (var connection = new SqliteConnection("Data Source=hello.db"))
     connection.Open();
     command.ExecuteNonQuery();
 }
-{% endhighlight %}
+```
 
 Platforms
 =========

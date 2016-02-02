@@ -10,7 +10,7 @@ disappear.
 
 Here is an example demonstrating how you can use them.
 
-{% highlight csharp %}
+```csharp
 
 // Databases are shared by using the same Data Source name
 var connectionString = "Data Source=sharedmemdb;Mode=Memory;Cache=Shared";
@@ -39,7 +39,7 @@ using (var connection1 = new SqliteConnection(connectionString))
         var message = command2.ExecuteScalar() as string;        
     }
 }
-{% endhighlight %}
+```
 
 
   [1]: https://github.com/aspnet/Microsoft.Data.Sqlite

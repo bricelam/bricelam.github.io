@@ -34,7 +34,7 @@ Well, it was time to think outside of the box. I knew that I needed a file to de
 have a release date, version number, release status, and a link to the download page. A feed was defiantly what I
 needed. Here is how I wanted it to look:
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text">Image Resizer for Windows</title>
@@ -51,7 +51,7 @@ needed. Here is how I wanted it to look:
     <category term="Alpha" />
   </entry>
 </feed>
-{% endhighlight %}
+```
 
 The release date maps to the updated element, the version maps to the title, the download link is ...a link (duh), and
 the release status maps to a category. Nice and simple, and 100% [Atom compliant][4].
@@ -72,7 +72,7 @@ would look like:
 Now it's time to write the code. First, I wrote some enums that would allow users to filter the kinds of updates they
 wanted to be notified for.
 
-{% highlight csharp %}
+```csharp
 enum ReleaseStatus
 {
     Stable = 1,
@@ -86,14 +86,14 @@ enum UpdateFilter
     Beta = Stable | ReleaseStatus.Beta,
     Alpha = Beta | ReleaseStatus.Alpha
 }
-{% endhighlight %}
+```
 
 The status enum values are powers of two so that they can be combined to form the filters. The filters just add on top
 of each other so that a filter of *Alpha* will update to a release status of *Stable*, *Beta*, or *Alpha*.
 
 Finally, here is the component that allows an application to check for updates:
 
-{% highlight csharp %}
+```csharp
 class UpdateChecker
 {
     public void CheckForUpdates(string feedUrl, UpdateFilter filter)
@@ -127,7 +127,7 @@ class UpdateChecker
         return (int)filter & (int)Enum.Parse(typeof(UpdateFilter), status, true) != 0;
     }
 }
-{% endhighlight %}
+```
 
 For my actual implementation, see [UpdaterService.cs][5].
 

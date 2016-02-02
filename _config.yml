@@ -16,7 +16,13 @@ author:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-gist
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-sitemap
   - jemoji
+gist:
+  noscript: false
+kramdown:
+  hard_wrap: false
+  input: GFM

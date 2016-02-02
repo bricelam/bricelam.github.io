@@ -27,7 +27,7 @@ The Problem
 ===========
 If you look at the full SQL that it is trying to run, the problem becomes clearer.
 
-{% highlight mysql %}
+```sql
 CREATE TABLE `__MigrationHistory` (
     `MigrationId` mediumtext NOT NULL,
     `Model` varbinary NOT NULL,
@@ -35,7 +35,7 @@ CREATE TABLE `__MigrationHistory` (
 
 ALTER TABLE `__MigrationHistory`
 ADD PRIMARY KEY (MigrationId);
-{% endhighlight %}
+```
 
 In MySQL, `varbinary` types must specify a max length. That's not the only problem though; a `mediumtext` primary key
 also must specify a key length. Interestingly, if you look at your database after recieving this exception, all of your
@@ -51,7 +51,7 @@ it ourselves fixing the two problems mentioned above. I've created a database in
 after the behavior of the `CreateDatabaseIfNotExists` initializer. Most of the code here can also be used to create one
 that mirrors `DropCreateDatabaseIfModelChanges` too. Here it is.
 
-{% highlight csharp %}
+```csharp
 class CreateMySqlDatabaseIfNotExists<TContext>
     : IDatabaseInitializer<TContext>
         where TContext : DbContext
@@ -154,7 +154,7 @@ VALUES (
             .InformationalVersion;
     }
 }
-{% endhighlight %}
+```
 
 There you have it. We basically let the Database.Create call do as much work as it can, then take over when it fails to
 create the `__MigrationHistory` table.
@@ -162,7 +162,7 @@ create the `__MigrationHistory` table.
 You can use the new initializer by calling `Database.SetInitializer`. One of the best places to do this is in your
 context's static constructor.
 
-{% highlight csharp %}
+```csharp
 class MyContext : DbContext
 {
     static MyContext()
@@ -178,11 +178,11 @@ class MyContext : DbContext
 
     // Add DbSet properties here
 }
-{% endhighlight %}
+```
 
 Alternatively, you can set it in your App/Web.config.
 
-{% highlight xml %}
+```xml
 <entityFramework>
   <contexts>
     <context type="MyNamespace.MyContext, MyAssembly">
@@ -192,7 +192,7 @@ MyAssembly]], MyAssembly" />
     </context>
   </contexts>
 </entityFramework>
-{% endhighlight %}
+```
 
 The Fix
 =======

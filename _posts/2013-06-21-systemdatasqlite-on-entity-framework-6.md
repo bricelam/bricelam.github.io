@@ -37,10 +37,10 @@ Installing it
 How can you get it? Easy, I've uploaded it to a NuGet feed hosted over on [MyGet][6]. You can install it directly from
 [Package Manager Console][7] using the following.
 
-{% highlight powershell %}
+```powershell
 Install-Package System.Data.SQLite.Linq -Pre -Source
     https://www.myget.org/F/bricelam/
-{% endhighlight %}
+```
 
 Enjoy! And be sure to give us any feedback regarding EF6 over on [our CodePlex project page][8].
 

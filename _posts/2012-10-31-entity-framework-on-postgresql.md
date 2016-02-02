@@ -30,7 +30,7 @@ Specifically, we will be using Artists and Albums.
 
 Add the following two classes to your project.
 
-{% highlight csharp %}
+```csharp
 public class Artist
 {
     public Artist()
@@ -52,7 +52,7 @@ public class Album
     public int ArtistId { get; set; }
     public virtual Artist Artist { get; set; }
 }
-{% endhighlight %}
+```
 
 Create a Context
 ================
@@ -64,7 +64,7 @@ install Entity Framework.
 
 Now, add the context class to your project.
 
-{% highlight csharp %}
+```csharp
 class ChinookContext : DbContext
 {
     public DbSet<Artist> Artists { get; set; }
@@ -81,7 +81,7 @@ class ChinookContext : DbContext
             .Remove<StoreGeneratedIdentityKeyConvention>();
     }
 }
-{% endhighlight %}
+```
 
 Install the Provider
 ====================
@@ -93,7 +93,7 @@ provider. Luckily, the provider we're using is available via NuGet.
 We also need to register the provider. Open App.config, and anywhere inside the configuration element, add the following
 fragment.
 
-{% highlight xml %}
+```xml
 <system.data>
   <DbProviderFactories>
     <add name="Npgsql Data Provider"
@@ -102,7 +102,7 @@ fragment.
           type="Npgsql.NpgsqlFactory, Npgsql" />
   </DbProviderFactories>
 </system.data>
-{% endhighlight %}
+```
 
 Add the Database
 ================
@@ -118,21 +118,21 @@ project, so I've submitted a pull request that adds support for PostgreSQL. It w
 Also, add a connection string to the App.Config that points to the database. Anywhere inside the `configuration`
 element, add the following fragment.
 
-{% highlight xml %}
+```xml
 <connectionStrings>
   <add name="ChinookContext"
         connectionString=
 "Server=localhost;Database=chinook;User Id=postgres;Password=P4ssw0rd;"
         providerName="Npgsql" />
 </connectionStrings>
-{% endhighlight %}
+```
 
 Start Coding
 ============
 Ok, we should be ready to start coding our application. Let's see what artists exist in the database. Inside Program.cs,
 add the following to `Main`.
 
-{% highlight csharp %}
+```csharp
 using (var db = new ChinookContext())
 {
     var artists = from a in db.Artists
@@ -145,11 +145,11 @@ using (var db = new ChinookContext())
         Console.WriteLine(artist.Name);
     }
 }
-{% endhighlight %}
+```
 
 Hmm, it looks like one of my favorite bands is missing. Let's add it.
 
-{% highlight csharp %}
+```csharp
 using (var db= new ChinookContext())
 {
     db.Artists.Add(
@@ -173,11 +173,11 @@ using (var db= new ChinookContext())
         });
     db.SaveChanges();
 }
-{% endhighlight %}
+```
 
 We can also update and delete existing data like this.
 
-{% highlight csharp %}
+```csharp
 using (var context = new ChinookContext())
 {
     var police = db.Artists.Single(a => a.Name == "The Police");
@@ -188,7 +188,7 @@ using (var context = new ChinookContext())
 
     db.SaveChanges();
 }
-{% endhighlight %}
+```
 
 Conclusion
 ==========
