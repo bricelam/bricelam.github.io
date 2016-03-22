@@ -1,11 +1,11 @@
 ---
 layout: post
-title: 'EF7 Migrations: Design-time'
+title: 'EF Core Migrations: Design-time'
 tags: entity-framework
 ---
 
-In previous posts, I've talked the [new ASP.NET commands][1] and the [enhanced NuGet commands][2] in Entity Framework 7.
-This post dives into some of the changes we've made to enhance the design-time experience of Migrations.
+In previous posts, I've talked the [new .NET Core CLI commands][1] and the [enhanced NuGet commands][2] in Entity
+Framework Core. This post dives into some of the changes we've made to enhance the design-time experience of Migrations.
 
 Enabling Migrations
 ===================
@@ -21,8 +21,8 @@ just type `Add-Migration`.
 
 Automatic Migrations
 ====================
-Automatic migrations were awesome ...for demos. We've removed them in EF7, and I have an appointment scheduled with Dr.
-Howard Mierzwiak to remove them from my memory.
+Automatic migrations were awesome ...for demos. We've removed them in EF Core, and I have an appointment scheduled with
+Dr. Howard Mierzwiak to remove them from my memory.
 
 Automatic migrations worked by diffing the last-known model against the current model. The last-known model may be
 stored in either the last explicit migration (i.e. non-automatic) or in the database if it comes from another automatic
@@ -31,7 +31,7 @@ always looked in the database, we wouldn't allow you to scaffold multiple migrat
 Automatic migrations also required us to store both the source and target models for each explicit migration that
 succeeded an automatic migration. Are you starting to see how these may have hindered the design-time experience?
 
-By removing automatic migrations in EF7, we're able to...
+By removing automatic migrations in EF Core, we're able to...
 
 * Stop storing model snapshots in the database
 * Stop querying the database on `Add-Migration`
@@ -82,12 +82,12 @@ Migrations can now span multiple namespaces. For example, if you want to group t
 were created for you could have some in `MyProject.Migration.V1_0` and some in `MyProject.Migration.V1_1`.
 `Add-Migration` is even smart enough to create new migrations in the same namespace and folder as the last one.
 
-Like in EF6, you can put migrations in a separate assembly. Though in EF7, we removed some of the pain. Just remember to
-always invoke Migrations commands on the project containing the migrations.
+Like in EF6, you can put migrations in a separate assembly. Though in EF Core, we removed some of the pain. Just
+remember to always invoke Migrations commands on the project containing the migrations.
 
 Feedback
 ========
-As always, please let us know what you think about this and other Entity Framework 7 features by commenting on [our
+As always, please let us know what you think about this and other Entity Framework Core features by commenting on [our
 blog posts][4], [tweeting us][5], or [submitting new issues][6].
 
 

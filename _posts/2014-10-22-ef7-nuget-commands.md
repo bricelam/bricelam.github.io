@@ -1,10 +1,10 @@
 ---
 layout: post
-title: 'EF7 Migrations: NuGet Commands'
+title: 'EF Core Migrations: NuGet Commands'
 tags: entity-framework
 ---
 
-With Entity Framework version 7 comes the great opportunity to improve upon EF's legacy by incorporating all the lessons
+With Entity Framework Core comes the great opportunity to improve upon EF's legacy by incorporating all the lessons
 we've learned over the past few years of developing this software. For me, that means a chance to improve on one of the
 first features I worked on after joining the team over four years ago: Code First Migrations' NuGet Commands. In this
 post, I want to talk about some of the improvements to these PowerShell commands.
@@ -34,11 +34,11 @@ Let's continue walking through the design. The command classes called into the `
 mimic the runtime environment as much as possible so that when we invoked the DbContext and Migrations code, it would
 behave as the user expected.
 
-How has all of this been improved in EF7?
+How has all of this been improved in EF Core?
 
-EF7 Design
+EF Core Design
 ----------
-![EF7 NuGet Commands Design]({{ "/attachments/EF7Commands.png" | prepend: site.baseurl | prepend: site.url }})
+![EF Core NuGet Commands Design]({{ "/attachments/EF7Commands.png" | prepend: site.baseurl | prepend: site.url }})
 
 We still start in a PowerShell module (`EntityFramework.psm1`). The PowerShell module is now responsible for creating
 the runtime-like AppDomain for hosting the user's application. It also takes care of doing things that need to be done
@@ -63,7 +63,7 @@ When working on projects with multiple DbContext classes, you had to specify whi
 use every time you invoked a command. This annoyed @lukewaters greatly. (He's a tester on our team.) To make this
 easier, we've enabled tab expansion of DbContext classes and migration names.
 
-![EF7 NuGet Commands Tab Expansion]({{ "/attachments/CommandsTabExpansion.png" | prepend: site.baseurl | prepend: site.url }})
+![EF Core NuGet Commands Tab Expansion]({{ "/attachments/CommandsTabExpansion.png" | prepend: site.baseurl | prepend: site.url }})
 
 Use-DbContext
 -------------
@@ -83,17 +83,17 @@ is, however one change worth mentioning in this post.
 
 The `Update-Database` command has been split into two new commands.
 
-* `Apply-Migration` applies migrations to the database
+* `Update-Database` just applies migrations to the database
 * `Script-Migration` generates a SQL script to apply the migrations to the database
 
 New Platforms
 -------------
-EF7 is being built for new platforms including Windows 8.1 and Windows Phone 8.1. I'm happy to say that, in addition to
-the Windows Desktop projects, the commands will also work with Windows, Windows Phone, and Portable projects.
+EF Core is being built for new platforms including the Universal Windows Platform. I'm happy to say that, in addition to
+the Windows Desktop projects, the commands will also work with Universal Windows projects.
 
 Feedback
 ========
-As always, please let us know what you think about this and other Entity Framework 7 features by commenting on [our
+As always, please let us know what you think about this and other Entity Framework Core features by commenting on [our
 blog posts][1], [tweeting us][2], or [submitting new issues][3].
 
 

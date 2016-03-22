@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'EF7 Migrations: The Movie'
+title: 'EF Core Migrations: The Movie'
 tags: entity-framework
 ---
 
@@ -20,12 +20,12 @@ their natural habitat. I got to show some of the improvements we've been making 
 Be sure to check out some of the other clips too!
 
 - [An Introduction to Entity Framework with Rowan Miller][1]
-- [The future of Entity Framework (EF7)][2]
-- [SQL Generation Improvements in Entity Framework 7][3]
-- [Alternate Keys in Entity Framework 7][4]
-- [Key Generation Strategies in Entity Framework 7][5]
-- [Shadow Properties in Entity Framework 7][6]
-- [Entity Framework 7 Goes Cross Platform with Nate McMaster][7]
+- [The future of Entity Framework (EF Core)][2]
+- [SQL Generation Improvements in Entity Framework Core][3]
+- [Alternate Keys in Entity Framework Core][4]
+- [Key Generation Strategies in Entity Framework Core][5]
+- [Shadow Properties in Entity Framework Core][6]
+- [Entity Framework Core Goes Cross Platform with Nate McMaster][7]
 
 
   [1]: https://channel9.msdn.com/Blogs/Seth-Juarez/An-Introduction-to-Entity-Framework-with-Rowan-Miller
