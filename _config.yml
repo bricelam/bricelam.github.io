@@ -9,9 +9,8 @@ author:
   name: Brice Lambson
   email: bricelam@outlook.com
   title: Senior Software Engineer
+  twitter: bricelambs
   github:  bricelam
-twitter:
-  username: bricelambs
 
 # Build settings
 markdown: kramdown
