@@ -1,5 +1,5 @@
 # Site settings
-name: Brice's Blog
+title: Brice's Blog
 description: Highlighting some of my more technical adventures
 baseurl: ""
 url: "http://www.bricelam.net"
@@ -9,8 +9,9 @@ author:
   name: Brice Lambson
   email: bricelam@outlook.com
   title: Senior Software Engineer
-  twitter: bricelambs
   github:  bricelam
+twitter:
+  username: bricelambs
 
 # Build settings
 markdown: kramdown
@@ -19,6 +20,7 @@ gems:
   - jekyll-gist
   - jekyll-mentions
   - jekyll-redirect-from
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
 gist:

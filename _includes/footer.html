@@ -2,7 +2,7 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.name }}</h2>
+    <h2 class="footer-heading">{{ site.title }}</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
@@ -20,9 +20,9 @@
           </li>
           {% endif %}
 
-          {% if site.author.twitter %}
+          {% if site.twitter.username %}
           <li>
-            {% include icon-twitter.html username=site.author.twitter %}
+            {% include icon-twitter.html username=site.twitter.username %}
           </li>
           {% endif %}
         </ul>
