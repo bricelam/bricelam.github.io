@@ -6,9 +6,9 @@ permalink: /about/
 
 ![Brice Lambson]({{ "/attachments/REDMOND_bricelam_LThumb.jpg" | prepend: site.baseurl }})
 
-Hello, my name is Brice Lambson. I'm a software engineer on the [Entity Framework][1] team at Microsoft. In my spare
-time, I enjoy giving back to the community through blogging and open source. You can usually find me on [Github][2],
-[Stack Overflow][3], or [Twitter][4].
+Hello, my name is Brice Lambson. I'm a senior software engineer on the [Entity Framework][1] team at Microsoft. In my
+spare time, I enjoy giving back to the community through blogging and open source. You can usually find me on
+[Github][2], [Stack Overflow][3], or [Twitter][4].
 
 
   [1]: http://msdn.com/data/ef
