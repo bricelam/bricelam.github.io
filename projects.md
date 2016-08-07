@@ -29,7 +29,7 @@ a list of contributions that I've made to various projects.
 
   [1]: https://github.com/aspnet/Microsoft.Data.Sqlite
   [2]: https://github.com/aspnet/EntityFramework
-  [3]: https://github.com/bricelam/ImageResizer
+  [3]: http://www.bricelam.net/ImageResizer/
   [4]: http://sourceforge.net/projects/orm
   [5]: https://github.com/xunit/xunit
   [6]: http://system.data.sqlite.org
