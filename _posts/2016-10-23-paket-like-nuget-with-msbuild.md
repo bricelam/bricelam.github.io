@@ -69,7 +69,7 @@ The `*.csproj` files would simply reference their corresponding `References.prop
 </Project>
 ``` 
 
-And that's it! You're dependency versions are defined in a single place for your entire solution, and each project
+And that's it! Your dependency versions are defined in a single place for your entire solution, and each project
 defines which dependencies it needs.
 
 This is just one example of a new scenario that can be enabled by moving NuGet package references into MSBuild. I look
