@@ -16,7 +16,7 @@ I'm also a big fan of [Paket][3], so I was intrigued when @llehn asked:
 In this post, I'd like to walk you through a prototype of how to structure your NuGet references to resemble
 [paket.dependencies][4] and [paket.references][5] files.
 
-The file looks like this:
+The file layout looks like this:
 
     .
     ├───App.sln
@@ -68,9 +68,6 @@ The `*.csproj` files would simply reference their corresponding `References.prop
   </ItemGroup>
 </Project>
 ``` 
-
-> Is there something to prevent me from adding two different versions of same library? Like Paket which does global
-> dependency resolving.
 
 And that's it! You're dependency versions are defined in a single place for your entire solution, and each project
 defines which dependencies it needs.
