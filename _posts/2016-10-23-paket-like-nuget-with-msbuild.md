@@ -31,7 +31,7 @@ The file layout looks like this:
 `Dependencies.props` declares any dependencies that you'll need throughout your solution. It goes in the root directory
 next to your solution file and looks like this:
 
-```XML
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Depencency Include="Newtonsoft.Json" Version="9.0.*"/>
@@ -52,13 +52,13 @@ next to your solution file and looks like this:
 
 The `*.csproj` files would simply reference their corresponding `References.props` file.
 
-```XML
+```xml
 <Import Project="References.props"/>
 ```
 
 `References.props` references the dependencies that are used by that project:
 
-```XML
+```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(SolutionDir)Dependencies.props"/>
 
