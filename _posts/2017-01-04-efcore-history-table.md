@@ -33,11 +33,11 @@ class MyHistoryRepository : SqlServerHistoryRepository
 {
     public MyHistoryRepository(
         IDatabaseCreator databaseCreator, IRawSqlCommandBuilder rawSqlCommandBuilder,
-        ISqlServerConnection connection, IDbContextOptions options, IMigrationsModelDiffer modelDiffer,
-        IMigrationsSqlGenerator migrationsSqlGenerator, IRelationalAnnotationProvider annotations,
-        ISqlGenerationHelper sqlGenerationHelper)
-        : base(databaseCreator, rawSqlCommandBuilder, connection, options, modelDiffer, migrationsSqlGenerator,
-              annotations, sqlGenerationHelper)
+        ISqlServerConnection connection, IDbContextOptions options,
+        IMigrationsModelDiffer modelDiffer, IMigrationsSqlGenerator migrationsSqlGenerator,
+        IRelationalAnnotationProvider annotations, ISqlGenerationHelper sqlGenerationHelper)
+        : base(databaseCreator, rawSqlCommandBuilder, connection, options, modelDiffer,
+            migrationsSqlGenerator, annotations, sqlGenerationHelper)
     {
     }
 
