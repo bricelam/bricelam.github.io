@@ -22,8 +22,8 @@ can customize the columns by overriding the `ConfigureTable` method. Here is an 
 column name to *Id*.
 
 ```csharp
-protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-    => optionsBuilder
+protected override void OnConfiguring(DbContextOptionsBuilder options)
+    => options
         .UseSqlServer(connectionString)
         .ReplaceService<SqlServerHistoryRepository, MyHistoryRepository>();
 ```
@@ -38,8 +38,8 @@ class MyHistoryRepository : SqlServerHistoryRepository
         IMigrationsSqlGenerator migrationsSqlGenerator,
         IRelationalAnnotationProvider annotations,
         ISqlGenerationHelper sqlGenerationHelper)
-        : base(databaseCreator, rawSqlCommandBuilder, connection, options, modelDiffer,
-            migrationsSqlGenerator, annotations, sqlGenerationHelper)
+        : base(databaseCreator, rawSqlCommandBuilder, connection, options,
+            modelDiffer, migrationsSqlGenerator, annotations, sqlGenerationHelper)
     {
     }
 
