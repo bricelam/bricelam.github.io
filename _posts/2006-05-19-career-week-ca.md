@@ -4,7 +4,7 @@ title: "Career Week: CA"
 permalink: /2006/05/career-week-ca.html
 ---
 
-![CA]({{ "/attachments/ca.jpg" | prepend: site.baseurl | prepend: site.url }})
+![CA]({{ "/attachments/ca.jpg" | absolute_url }})
 
 Rich Mina of [CA][1] spoke to us. He wasn't very technical, but he had some good advice to consider for our future
 careers.

@@ -4,7 +4,7 @@ title: Doug's Journal
 permalink: /2007/05/dougs-journal.html
 ---
 
-![Doug]({{ "/attachments/doug.jpg" | prepend: site.baseurl | prepend: site.url }})
+![Doug]({{ "/attachments/doug.jpg" | absolute_url }})
 
 I've been thinking of a project that would be beneficial to everyone and worth my time to develop. I think I have come
 up with it. Anyone remember [Doug][1]? Doug was one of my favorite Saturday morning cartoons. Every episode begins and

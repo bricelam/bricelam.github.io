@@ -17,7 +17,7 @@ include things like:
 
 Just so you can get a feel of what I'm talking about, here is a little prototype I made today:
 
-![Resize Pictures Prototype]({{ "/attachments/ResizePictures3.png" | prepend: site.baseurl | prepend: site.url }})
+![Resize Pictures Prototype]({{ "/attachments/ResizePictures3.png" | absolute_url }})
 
 Another thing I want to do is rip out all the GDI+ code and replace it with the newer Windows Imaging Component (WIC)
 technology. WIC handles a lot more metadata, and it is extensible so my program could in theory support every image

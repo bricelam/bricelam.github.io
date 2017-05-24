@@ -1,8 +1,6 @@
 # Site settings
 title: Brice's Blog
 description: Highlighting some of my more technical adventures
-baseurl: ""
-url: "http://www.bricelam.net"
 disqus_shortname: bricelam
 google_analytics_tracking_id: UA-57792437-1
 author:

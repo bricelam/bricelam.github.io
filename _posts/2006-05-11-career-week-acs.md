@@ -4,7 +4,7 @@ title: "Career Week: ACS"
 permalink: /2006/05/career-week-acs.html
 ---
 
-![ACS]({{ "/attachments/acs.jpg" | prepend: site.baseurl | prepend: site.url }})
+![ACS]({{ "/attachments/acs.jpg" | absolute_url }})
 
 [ACS][1] had a lot of people come:
 

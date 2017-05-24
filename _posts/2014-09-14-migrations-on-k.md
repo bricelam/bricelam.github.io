@@ -39,7 +39,7 @@ cd src\MyProject
 dotnet ef
 ```
 
-![Entity Framework .NET Core CLI Commands]({{ "/attachments/EFCommands.png" | prepend: site.baseurl | prepend: site.url }})
+![Entity Framework .NET Core CLI Commands]({{ "/attachments/EFCommands.png" | absolute_url }})
 
 Using
 =====

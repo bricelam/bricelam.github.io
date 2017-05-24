@@ -9,7 +9,7 @@ I love [WinMerge][1]. My favorite features of it are syntax highlighting and mov
 
 First, open the TortoiseGit Settings dialog. On the left, select **Diff Viewer**.
 
-![TortoiseGit Diff Viewer Settings]({{ "/attachments/TortoiseGitDiffViewer.png" | prepend: site.baseurl | prepend: site.url }})
+![TortoiseGit Diff Viewer Settings]({{ "/attachments/TortoiseGitDiffViewer.png" | absolute_url }})
 
 Under **Configure the program used for comparing different revisions of files**, select **External** and type the
 following into the box.

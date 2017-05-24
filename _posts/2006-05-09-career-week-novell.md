@@ -7,7 +7,7 @@ permalink: /2006/05/career-week-novell.html
 This week is career week at [Neumont University][1]. This means that at noon every day this week we'll have the
 opportunity to listen to a guest speaker from some big-name company. Oh, and the best part of all - **free lunch**!
 
-![Novell]({{ "/attachments/novell.jpg" | prepend: site.baseurl | prepend: site.url }})
+![Novell]({{ "/attachments/novell.jpg" | absolute_url }})
 
 Alan Clark and Cheryl Williams came to speak to us about some of the things that go on at [Novell][2]. I really liked
 their outlook on the future. Novell is highly involved in the open source and open standards community. In fact, Alan

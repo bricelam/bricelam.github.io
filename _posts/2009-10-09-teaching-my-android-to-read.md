@@ -35,7 +35,7 @@ how we roll. Here's how it works:
 
 Here is an example of it working on the Domino's ad that was on my door this afternoon:
 
-![Large 3-Topping Pizza]({{ "/attachments/Literate.jpg" | prepend: site.baseurl | prepend: site.url }})
+![Large 3-Topping Pizza]({{ "/attachments/Literate.jpg" | absolute_url }})
 
 Surprisingly, it only took Ocrad took about 200ms to process the entire image on the device. It takes Barcode Sanner
 about twice as long to process a 2D barcode. Although, I did cheat by using a native processor (Barcode Scanner has the

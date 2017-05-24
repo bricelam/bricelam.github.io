@@ -10,7 +10,7 @@ Options][2].
 
 Basically, I am proposing the following changes:
 
-![Resize Pictures Screenshot]({{ "/attachments/AdvancedOptions.png" | prepend: site.baseurl | prepend: site.url }})
+![Resize Pictures Screenshot]({{ "/attachments/AdvancedOptions.png" | absolute_url }})
 
 I would **greatly appreciate** any feedback you may have on this. Please see [the Work Item][2] for more details.
 

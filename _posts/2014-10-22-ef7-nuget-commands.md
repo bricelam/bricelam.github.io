@@ -16,7 +16,7 @@ I want to start by talking about the design. Let's examine the current implement
 
 EF 4.3 Design
 -------------
-![EF 4.3 NuGet Commands Design]({{ "/attachments/EF6Commands.png" | prepend: site.baseurl | prepend: site.url }})
+![EF 4.3 NuGet Commands Design]({{ "/attachments/EF6Commands.png" | absolute_url }})
 
 Let's walk through it going from left to right. We start with the PowerShell module (`EntityFramework.psm1`) which is
 hosted in the main Visual Studio AppDomain. These call into the command classes which are contained in
@@ -38,7 +38,7 @@ How has all of this been improved in EF Core?
 
 EF Core Design
 ----------
-![EF Core NuGet Commands Design]({{ "/attachments/EF7Commands.png" | prepend: site.baseurl | prepend: site.url }})
+![EF Core NuGet Commands Design]({{ "/attachments/EF7Commands.png" | absolute_url }})
 
 We still start in a PowerShell module (`EntityFramework.psm1`). The PowerShell module is now responsible for creating
 the runtime-like AppDomain for hosting the user's application. It also takes care of doing things that need to be done
@@ -63,7 +63,7 @@ When working on projects with multiple DbContext classes, you had to specify whi
 use every time you invoked a command. This annoyed @lukewaters greatly. (He's a tester on our team.) To make this
 easier, we've enabled tab expansion of DbContext classes and migration names.
 
-![EF Core NuGet Commands Tab Expansion]({{ "/attachments/CommandsTabExpansion.png" | prepend: site.baseurl | prepend: site.url }})
+![EF Core NuGet Commands Tab Expansion]({{ "/attachments/CommandsTabExpansion.png" | absolute_url }})
 
 Use-DbContext
 -------------

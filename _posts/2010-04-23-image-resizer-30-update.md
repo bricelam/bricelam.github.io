@@ -20,7 +20,7 @@ nicely. There will be two main applications: the Image Resizer, and it's Setting
 the application is today with a major UI overhaul and some subtle new features. It will be a multi-page dialog
 consisting of the following page, a progress page, and a results page.
 
-![Image Resizer 3 Prototype]({{ "/attachments/ImageResizer.png" | prepend: site.baseurl | prepend: site.url }})
+![Image Resizer 3 Prototype]({{ "/attachments/ImageResizer.png" | absolute_url }})
 
 Please note that this screenshot is not finalized. There are a few more things I would like to add to it, and I'm sure
 it will go through a few more rounds of editing and polishing. However, it gives you a good feel for the direction I am
