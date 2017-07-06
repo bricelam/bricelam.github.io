@@ -17,9 +17,9 @@ Download the [microsoft/mssql-server-windows-developer][3] image.
 
     docker pull microsoft/mssql-server-windows-developer
 
-Create and start a new container with it. Use 2GB of memory. Publish prot 1433 to the host.
+Create and start a new container with it. Use 2GB of memory. Publish port 1433 to the host.
 
-    docker run -d -p 1433:1433 -m 2g -e sa_password=Password12! -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
+    docker run -d -m 2g -p 1433:1433 -e sa_password=Password12! -e ACCEPT_EULA=Y microsoft/mssql-server-windows-developer
 
 At this point, you can start ad-hoc testing against the server using the following connection string.
 
