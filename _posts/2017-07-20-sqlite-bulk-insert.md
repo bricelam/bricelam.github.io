@@ -30,8 +30,8 @@ using (var command = connection.CreateCommand())
 
     foreach (var contact in contacts)
     {
-        nameParameter.Value = contact.Name;
-        emailParameter.Value = contact.Email;
+        nameParameter.Value = contact.Name ?? DBNull.Value;
+        emailParameter.Value = contact.Email ?? DBNull.Value;
         command.ExecuteNonQuery();
     }
 
