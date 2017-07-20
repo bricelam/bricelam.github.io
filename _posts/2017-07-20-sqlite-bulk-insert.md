@@ -12,7 +12,7 @@ The two things you can to do to speed up inserts are:
 1. Use a transaction.
 2. Re-use the same `INSERT` command.
 
-```C#
+```csharp
 using (var transaction = connection.BeginTransaction())
 using (var command = connection.CreateCommand())
 {
@@ -51,7 +51,7 @@ Dangerously Fast
 If you're willing to take risks, you can squeeze even more speed out of it by using a couple `PRAGMA` statements. Make
 sure, however, that you understand [the consequences][2] of doing this.
 
-```SQL
+```sql
 PRAGMA journal_mode = MEMORY;
 PRAGMA synchronous = OFF;
 ```
