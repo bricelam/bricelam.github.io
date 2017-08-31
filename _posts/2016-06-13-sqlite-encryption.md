@@ -15,23 +15,31 @@ SQLite database files. They all seem to follow the same general pattern, so this
 Bring Your Own Library
 ----------------------
 The first step is to add a version of the native `sqlite3` library to you application that has encryption.
-`Microsoft.Data.Sqlite` comes with the official release of SQLite, but you can copy over `sqlite3.dll` (or
-`libsqlite3.so` or `.dylib`) with a custom version.
+`Microsoft.Data.Sqlite` depends on [SQLitePCL.raw][7] which makes it very easy to use SQLCipher.
 
-Do this in Visual Studio by adding it to your project and setting **Copy to Output Directory** to **Copy if newer** in
-the item's **Properties**.
+```powershell
+Install-Package Microsoft.Data.Sqlite.Core
+Install-Package SQLitePCLRaw.bundle_sqlcipher
+```
+
+SQLitePCL.raw also enables you to bring your own build of SQLite, but we won't cover that in this post.
 
 Specify the Key
 ---------------
-To enable encryption, Specify the key immediately after opening the connection. Do this by issuing a `PRAGMA key` 
+To enable encryption, Specify the key immediately after opening the connection. Do this by issuing a `PRAGMA key`
 statement. It may be specified as either a string or BLOB literal. SQLite, unfortunately, doesn't support parameters in
-`PRAGMA` statements. :disappointed:
+`PRAGMA` statements. :disappointed: Use the `quote()` function instead to prevent SQL injection.
 
 ```csharp
 connection.Open();
 
 var command = connection.CreateCommand();
-command.CommandText = "PRAGMA key = 'password';";
+command.CommandText = "SELECT quote($password);";
+command.Parameters.AddWithValue("$password", password);
+var quotedPassword = (string)command.ExecuteScalar();
+
+command.CommandText = "PRAGMA key = " + quotedPassword;
+command.Parameters.Clear();
 command.ExecuteNonQuery();
 
 // Interact with the database here
@@ -44,7 +52,7 @@ specify `NULL`.
 
 ```csharp
 var command = connection.CreateCommand();
-command.CommandText = "PRAGMA rekey = 'new-password';";
+command.CommandText = "PRAGMA rekey = " + newPassword;
 command.ExecuteNonQuery();
 ```
 
@@ -54,3 +62,4 @@ command.ExecuteNonQuery();
   [4]: https://www.zetetic.net/sqlcipher/
   [5]: http://sqlite-crypt.com/index.htm
   [6]: https://github.com/utelle/wxsqlite3
+  [7]: https://github.com/ericsink/SQLitePCL.raw
