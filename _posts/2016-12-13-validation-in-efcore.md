@@ -22,7 +22,10 @@ class MyContext : DbContext
         foreach (var entity in entities)
         {
             var validationContext = new ValidationContext(entity);
-            Validator.ValidateObject(entity, validationContext);
+            Validator.ValidateObject(
+                entity,
+                validationContext,
+                validateAllProperties: true);
         }
 
         return base.SaveChanges();
