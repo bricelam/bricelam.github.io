@@ -16,14 +16,14 @@ install it.
 To install and use the package inside Visual Studio using NuGet's Package Manager Console (PMC), type the following.
 
 ``` powershell
-Install-Package Bricelam.EntityFrameworkCore.Pluralizer -Version 1.0.0-rc2
+Install-Package Bricelam.EntityFrameworkCore.Pluralizer -Version 1.0.0-rc3
 Scaffold-DbContext 'Filename=chinook.db' Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 If you're on a command-line instead, type this.
 
 ``` shell
-dotnet add package Bricelam.EntityFrameworkCore.Pluralizer --version 1.0.0-rc2
+dotnet add package Bricelam.EntityFrameworkCore.Pluralizer --version 1.0.0-rc3
 dotnet ef dbcontext scaffold "Filename=chinook.db" Microsoft.EntityFrameworkCore.Sqlite
 ```
 
