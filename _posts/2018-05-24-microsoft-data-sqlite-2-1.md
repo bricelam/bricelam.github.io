@@ -129,10 +129,10 @@ There are also a handful of other APIs added or enabled in this release:
 * `SqliteParameter.Size` can now be used to truncate `string` and `byte[]` values.
 
 
-  [1]: 2017-07-20-sqlite-bulk-insert.md
+  [1]: {{ site.baseurl }}{% post_url 2017-07-20-sqlite-bulk-insert %}
   [2]: https://github.com/aspnet/Microsoft.Data.Sqlite/blob/2.1.0/samples/AggregateFunctionSample/Program.cs
   [3]: https://github.com/aspnet/Microsoft.Data.Sqlite/blob/2.1.0/samples/RegularExpressionSample/Program.cs
-  [4]: 2017-08-22-sqlite-efcore-udf-all-the-things.md
+  [4]: {{ site.baseurl }}{% post_url 2017-08-22-sqlite-efcore-udf-all-the-things %}
   [5]: https://github.com/aspnet/Microsoft.Data.Sqlite/blob/2.1.0/samples/ResultMetadataSample/Program.cs
   [6]: https://github.com/aspnet/Microsoft.Data.Sqlite/blob/2.1.0/samples/DateAndTimeSample/Program.cs
   [7]: https://github.com/aspnet/Microsoft.Data.Sqlite/issues/18
