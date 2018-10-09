@@ -17,6 +17,8 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
+* [Npgsql][12] - Fixed a bug in geometry literals in the EF Core provider (*2018*)
 * [xUnit.net][5]
     * Added support for .NET Core (*2014*)
     * Added trait-based filtering to the MSBuild runner (*2013*)
@@ -28,7 +30,7 @@ a list of contributions that I've made to various projects.
 
 
   [1]: https://github.com/aspnet/Microsoft.Data.Sqlite
-  [2]: https://github.com/aspnet/EntityFramework
+  [2]: https://github.com/aspnet/EntityFrameworkCore
   [3]: http://www.bricelam.net/ImageResizer/
   [4]: http://sourceforge.net/projects/orm
   [5]: https://github.com/xunit/xunit
@@ -37,3 +39,5 @@ a list of contributions that I've made to various projects.
   [8]: https://chinookdatabase.codeplex.com
   [9]: https://openriaservices.codeplex.com
   [10]: https://github.com/damonkohler/sl4a
+  [11]: https://github.com/NetTopologySuite
+  [12]: https://github.com/npgsql
