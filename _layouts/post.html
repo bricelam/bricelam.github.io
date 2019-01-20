@@ -14,12 +14,12 @@ layout: default
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{
           page.author }}</span></span>
       {%- endif -%}
-      {%- if page.tags.size > 0 -%}
+      {%- if page.tags.size > 0 %}
       •
-        {%- for tag in page.tags -%}
-        &nbsp;<a href="{%- link tags.html -%}#{{ tag }}">#{{ tag }}</a>
-        {%- endfor -%}
-      {%- endif -%}</p>
+        {% for tag in page.tags -%}
+        <a href="{% link tags/index.html %}#{{ tag }}">#{{ tag }}</a>
+        {% endfor -%}
+      {%- endif %}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">

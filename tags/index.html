@@ -3,11 +3,14 @@ layout: page
 title: Tags
 ---
 
-{%- for tag in site.tags -%}
+{% assign sorted_tags = site.tags | sort %}
+{%- for tag in sorted_tags -%}
   <h2 id="{{ tag[0] }}" class="post-list-heading">#{{ tag[0] }}</h2>
   <ul class="post-list">
     {%- for post in tag[1] -%}
     <li>
+       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+       <span class="post-meta">{{ post.date | date: date_format }}</span>
        <h3>
          <a class="post-link" href="{{ post.url }}">
            {{ post.title | escape }}
