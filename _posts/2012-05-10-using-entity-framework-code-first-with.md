@@ -2,7 +2,7 @@
 layout: post
 title: Using Entity Framework 4.3 Code First with MySQL's Connector/Net
 permalink: /2012/05/using-entity-framework-code-first-with.html
-tags: entity-framework mysql
+tags: [ entity-framework, mysql ]
 ---
 
 <div style="color: red; text-align: center;">

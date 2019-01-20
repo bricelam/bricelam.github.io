@@ -9,6 +9,9 @@ email: brice@bricelam.net
 github_username: bricelam
 twitter_username: bricelambs
 theme: minima
+header_pages:
+  - about.md
+  - projects.md
 
 # Build settings
 future: true

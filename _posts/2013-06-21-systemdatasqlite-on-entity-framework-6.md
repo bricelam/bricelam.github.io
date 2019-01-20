@@ -2,7 +2,7 @@
 layout: post
 title: System.Data.SQLite on Entity Framework 6
 permalink: /2013/06/systemdatasqlite-on-entity-framework-6.html
-tags: entity-framework sqlite
+tags: [ entity-framework, sqlite ]
 ---
 
 <div style="color: red; text-align: center;">

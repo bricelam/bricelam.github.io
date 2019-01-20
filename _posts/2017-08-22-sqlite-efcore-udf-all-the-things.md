@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'SQLite & EF Core: UDF all the things!'
-tags: entity-framework, sqlite
+tags: [ entity-framework, sqlite ]
 ---
 
 We recently had two community contributions for using user-defined functions (UDFs) in EF Core and Microsoft.Data.Sqlite

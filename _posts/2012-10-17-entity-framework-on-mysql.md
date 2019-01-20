@@ -2,7 +2,7 @@
 layout: post
 title: Entity Framework 4.2 on MySQL
 permalink: /2012/10/entity-framework-on-mysql.html
-tags: entity-framework mysql
+tags: [ entity-framework, mysql ]
 ---
 
 This walkthrough will get you started with an application that uses the [Entity Framework][1] (EF) to read and write

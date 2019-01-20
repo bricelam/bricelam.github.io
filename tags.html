@@ -1,0 +1,19 @@
+---
+layout: page
+title: Tags
+---
+
+{%- for tag in site.tags -%}
+  <h2 id="{{ tag[0] }}" class="post-list-heading">#{{ tag[0] }}</h2>
+  <ul class="post-list">
+    {%- for post in tag[1] -%}
+    <li>
+       <h3>
+         <a class="post-link" href="{{ post.url }}">
+           {{ post.title | escape }}
+         </a>
+       </h3>
+     </li>
+    {%- endfor -%}
+  </ul>
+{%- endfor -%}

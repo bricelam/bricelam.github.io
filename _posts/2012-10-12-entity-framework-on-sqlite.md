@@ -2,7 +2,7 @@
 layout: post
 title: Entity Framework 5 on SQLite
 permalink: /2012/10/entity-framework-on-sqlite.html
-tags: entity-framework sqlite
+tags: [ entity-framework, sqlite ]
 ---
 
 This walkthrough will get you started with an application that uses the [Entity Framework][1] (EF) to read and write

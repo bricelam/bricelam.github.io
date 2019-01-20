@@ -2,7 +2,7 @@
 layout: post
 title: Entity Framework 5 on PostgreSQL
 permalink: /2012/10/entity-framework-on-postgresql.html
-tags: entity-framework postgresql
+tags: [ entity-framework, postgresql ]
 ---
 
 This walkthrough will get you started with an application that uses the [Entity Framework][1] (EF) to read and write
