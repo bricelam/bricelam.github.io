@@ -1,26 +1,28 @@
 # Site settings
 title: Brice's Blog
 description: Highlighting some of my more technical adventures
-disqus_shortname: bricelam
-google_analytics_tracking_id: UA-57792437-1
-author:
-  name: Brice Lambson
-  email: brice@bricelam.net
-  title: Senior Software Engineer
-  twitter: bricelambs
-  github:  bricelam
+disqus:
+  shortname: bricelam
+google_analytics: UA-57792437-1
+author: Brice Lambson
+email: brice@bricelam.net
+github_username: bricelam
+twitter_username: bricelambs
+theme: minima
 
 # Build settings
-markdown: kramdown
-gems:
+future: true
+plugins:
   - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
+gfm_quirks: paragraph_end
 gist:
   noscript: false
+jailed: false
 kramdown:
-  hard_wrap: false
-  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
