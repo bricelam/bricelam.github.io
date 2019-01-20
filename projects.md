@@ -36,8 +36,8 @@ a list of contributions that I've made to various projects.
   [5]: https://github.com/xunit/xunit
   [6]: http://system.data.sqlite.org
   [7]: https://github.com/git-for-windows/git
-  [8]: https://chinookdatabase.codeplex.com
-  [9]: https://openriaservices.codeplex.com
+  [8]: https://github.com/lerocha/chinook-database
+  [9]: https://github.com/OpenRIAServices
   [10]: https://github.com/damonkohler/sl4a
   [11]: https://github.com/NetTopologySuite
   [12]: https://github.com/npgsql
