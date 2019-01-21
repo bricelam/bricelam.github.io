@@ -12,6 +12,9 @@ theme: minima
 header_pages:
   - about.md
   - projects.md
+paginate: 7
+paginate_path: "/page/:num/"
+show_excerpts: true
 
 # Build settings
 future: true
