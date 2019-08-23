@@ -14,7 +14,7 @@ Better database types
 ---------------------
 
 SQLite has a [dynamic type system][3] with only four intrinsic types--INTEGER (a signed 64-bit integer), REAL (a 64-bit
-floating point value), TEXT, and BLOB. This presents several problems when creating a ADO.NET provider. We've had a lot
+floating point value), TEXT, and BLOB. This presents several problems when creating an ADO.NET provider. We've had a lot
 of feedback in this area and wanted to use version 3.0 to make a few breaking changes to improve type mapping and
 inference.
 
@@ -22,9 +22,9 @@ New char mapping (breaking change)
 ================
 
 `char` values now map to `TEXT`. These were previously mapped to INTEGER values encoded using UTF-16. This made queries
-unnecessarily complex would impose arbitrary limits on future UTF-8 capabilities.
+unnecessarily complex and would impose arbitrary restrictions on future UTF-8 capabilities.
 
-You can migrate the data of char columns created using previous version by using SQL similar to the following.
+You can migrate the data of char columns created using previous version by using SQL like the following.
 
 ``` sql
 -- Convert char values from INTEGER to TEXT
@@ -103,18 +103,18 @@ Other breaking changes
 
 There are a few other minor breaking changes in this release.
 
-We updated to [SQLitePCL.raw version 2.0][4]. This is the low-level API we build on top of to call into the native
-SQLite library. Most applications probably aren't using it directly, but if you are, see their release notes for
-breaking changes.
+We updated to [SQLitePCL.raw version 2.0][4]. This is the low-level API maintained by @ericsink that we build on top of
+to call into the native SQLite library. Most applications probably aren't using it directly, but if you are, see the
+release notes for breaking changes.
 
 The Microsoft.Data.Sqlite package now depends on SQLitePCLRaw.bundle_e_sqlite. This only affects **Xamarin.iOS** which
-will now use a version of SQLite consistent with all other targets.
+will now use a version of SQLite consistent with all the other target frameworks and runtimes.
 
-SqliteCommand.CommandTimeout has ben updated so that a value of **zero means no timeout**. Previously, it directed
-commands to timeout immediately when the database was busy. The new behavior is consistent ADO.NET recommendations.
+SqliteCommand.CommandTimeout has been updated so that a value of **zero means no timeout**. Previously, it directed
+commands to timeout immediately when the database was busy. The new behavior is consistent with ADO.NET recommendations.
 
 In order to fix [a bug][5] with batched statements, we had to change where **timeout exceptions** could be thrown from.
-In addition to the execute methods on SqliteConnection, these exceptions can now be thrown from NextResult and
+In addition to the execute methods on SqliteConnection, these exceptions can now also be thrown from NextResult and
 Dispose on SqliteDataReader.
 
 Re-opening a connection
@@ -122,22 +122,22 @@ Re-opening a connection
 
 In previous versions of Microsoft.Data.Sqlite, things like foreign key enforcement, user-defined functions, and SQLite
 extensions were cleared when a connection was closed. While this reflected the underlying behavior of SQLite, it
-hindered the usability of Microsoft.Data.SQLite.
+hindered the usability of Microsoft.Data.Sqlite.
 
-In version 3.0, we now preserve these between connection close and re-open. The following methods on SqliteConnection
-are affected.
+In version 3.0, we now preserve state between connection close and re-open. Calls the following methods on
+SqliteConnection will remain effective for the lifetime of the connection object.
 
 * CreateAggregate
 * CreateCollation
 * CreateFunction
 * EnableExtensions
 
-We also added a method on SqliteConnection for loading extensions so they too can be re-enabled on re-open.
+We also added a method on SqliteConnection for loading extensions so they too can be preserved.
 
 * LoadExtension
 
-Finally, we've added some new **connection string keywords** to help maintain consistent behavior between connection
-close and re-open.
+Finally, we added new **connection string keywords** to help maintain consistent behavior between connection close and
+re-open.
 
 | Keyword            | Default | Description                                                                           |
 | ------------------ | ------- | ------------------------------------------------------------------------------------- |
@@ -152,7 +152,7 @@ Blob I/O
 feature of SQLite can reduce the amount of memory used by your application. It's particularly useful when parsing or
 transforming large amounts of data.
 
-Use the new `SqliteBlob` type to stream values into the database. This type inherits from Stream, and works with all the
+Use the new `SqliteBlob` type to stream values into a database. This type inherits from Stream and works with all the
 existing Stream goodness in .NET. Here is an example.
 
 ``` csharp
