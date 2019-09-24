@@ -4,8 +4,8 @@ title: Microsoft.Data.Sqlite 3.0
 tags: sqlite
 ---
 
-Version 3.0 of Microsoft.Data.Sqlite is nearly done. [Preview 8][1] is available on NuGet, and the final version will be
-available alongside the rest of .NET Core 3.0 at [.NET Conf][2].
+Version 3.0 of [Microsoft.Data.Sqlite][1] is available on NuGet. It was released alongside the rest of .NET Core 3.0 at
+[.NET Conf][2].
 
 Beware, there are a handful of breaking changes in this release that could break your application. Please read these
 release notes carefully.
@@ -203,11 +203,10 @@ using (var reader = command.ExecuteReader())
 Feedback
 --------
 
-Please try out Microsoft.Data.Sqlite version 3.0 while it's still in preview. [Let us know][6] if you find any issues or
-otherwise have feedback about the library.
+[Let us know][6] if you find any issues or otherwise have feedback about Microsoft.Data.Sqlite.
 
 
-  [1]: https://www.nuget.org/packages/Microsoft.Data.SQLite/3.0.0-preview8.19405.11
+  [1]: https://www.nuget.org/packages/Microsoft.Data.SQLite
   [2]: https://www.dotnetconf.net/
   [3]: https://www.sqlite.org/datatype3.html
   [4]: https://github.com/ericsink/SQLitePCL.raw/blob/master/v2.md
