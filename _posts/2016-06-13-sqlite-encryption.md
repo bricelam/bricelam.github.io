@@ -45,6 +45,20 @@ command.ExecuteNonQuery();
 // Interact with the database here
 ```
 
+### Updated in 3.0
+
+Note, if you're using Microsoft.Data.Sqlite version 3.0 or newer, the above commands are unnessary. The `Password` connection string keyword can be used instead.
+
+```csharp
+// Add or update the Password connection string keyword
+connection.ConnectionString =
+    new SqliteConnectionStringBuilder(connection.ConnectionString)
+        { Password = password }
+        .ToString();
+
+connection.Open();
+```
+
 Rekey the Database
 ------------------
 If you want to change the encryption key of a database, issue a `PRAGMA rekey` statement. To decrypt the database,
