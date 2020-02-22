@@ -71,7 +71,7 @@ After doing this, the templates should now be used whenever you reverse engineer
 dotnet ef dbcontext scaffold "Data Source=Chinook.db" Microsoft.EntityFrameworkCore.Sqlite
 ```
 
-If you're not using Visual Studio, you'll need to use [dotnet-ef](https://github.com/mono/t4) after editing the template files to re-generate the code-behind files:
+If you're not using Visual Studio, you'll need to use [dotnet-t4](https://github.com/mono/t4) after editing the template files to re-generate the code-behind files:
 
 ``` sh
 dotnet tool install -g dotnet-t4
