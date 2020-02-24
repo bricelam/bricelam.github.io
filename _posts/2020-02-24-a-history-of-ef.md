@@ -13,8 +13,8 @@ I put together a timeline to go with the episode:
 Year | Event
 ---- | -----
 2006 | [WinFS cancelled](https://docs.microsoft.com/archive/blogs/winfs/winfs-update)<br /><br />[First preview](https://docs.microsoft.com/archive/blogs/dataaccess/ado-net-vnext-the-entity-framework-linq-and-more) of Entity Framework released
-2008 | [Vote of no confidence](https://www.zdnet.com/article/testers-give-microsofts-entity-framework-a-no-confidence-vote/)<br /><br />[EF 1.0](https://docs.microsoft.com/archive/blogs/adonet/rtm-is-finally-here) released as part of .NET Framework 3.5 SP1<br /><br />[LINQ to SQL cancelled](https://docs.microsoft.com/en-us/archive/blogs/adonet/update-on-linq-to-sql-and-linq-to-entities-roadmap)
-2010 | EF 4.0 released (POCO, foreign keys, lazy loading, templates)<br /><br />[Magic Unicorn Edition](https://www.hanselman.com/blog/SimpleCodeFirstWithEntityFramework4MagicUnicornFeatureCTP4.aspx) released<br /><br />I joined the team
+2008 | [Vote of no confidence](https://www.zdnet.com/article/testers-give-microsofts-entity-framework-a-no-confidence-vote/)<br /><br />[EF 1.0](https://docs.microsoft.com/archive/blogs/adonet/rtm-is-finally-here) released as part of .NET Framework 3.5 SP1<br /><br />[LINQ to SQL cancelled](https://docs.microsoft.com/archive/blogs/adonet/update-on-linq-to-sql-and-linq-to-entities-roadmap)
+2010 | [EF 4.0](https://docs.microsoft.com/archive/blogs/adonet/entity-framework-and-linq-to-sql-additional-programming-patterns-in-ef4) released (POCO, foreign keys, lazy loading, templates)<br /><br />[Magic Unicorn Edition](https://www.hanselman.com/blog/SimpleCodeFirstWithEntityFramework4MagicUnicornFeatureCTP4.aspx) released<br /><br />I joined the team
 2011 | [EF 4.1](https://docs.microsoft.com/archive/blogs/adonet/ef-4-1-released) released (DbContext, code first)
 2012 | [EF 4.3](https://docs.microsoft.com/archive/blogs/adonet/ef-4-3-released) released (migrations)<br /><br />[EF 5.0](https://docs.microsoft.com/archive/blogs/adonet/ef5-released) released (enums, spatial, TVFs)<br /><br />Move from SQL org to Azure (ASP.NET)
 2013 | [EF 6.0](https://docs.microsoft.com/archive/blogs/adonet/ef6-rtm-available) released (async, connection resiliency, custom conventions, sprocs)
@@ -24,11 +24,11 @@ Year | Event
 2018 | [EF Core 2.1](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-1/) released (lazy loading, value converters, keyless entity types, group by, construct parameters, seeding)<br /><br />[EF Core 2.2](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-2-2/) released (spatial, owned collections, query tags)
 2019 | Moved to DevDiv (.NET) org<br /><br />[EF Core 3.0](https://devblogs.microsoft.com/dotnet/announcing-ef-core-3-0-and-ef-6-3-general-availability/) released (Azure Cosmos DB, await foreach, nullable reference types, single server-eval query, interceptors)<br /><br />[EF 6.3](https://devblogs.microsoft.com/dotnet/announcing-ef-core-3-0-and-ef-6-3-general-availability/#what-s-new-in-ef-6-3) released (.NET Core)
 2019 | [EF 6.4](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-1-and-entity-framework-6-4/) released<br /><br />[EF Core 3.1](https://devblogs.microsoft.com/dotnet/announcing-entity-framework-core-3-1-and-entity-framework-6-4/) released
-2020 | Planning for [EF Core 5.0](https://docs.microsoft.com/en-us/ef/core/what-is-new/ef-core-5.0/plan) (many-to-many, TPT)
+2020 | Planning for [EF Core 5.0](https://docs.microsoft.com/ef/core/what-is-new/ef-core-5.0/plan) (many-to-many, TPT)
 
 If you're interested in learning more about the history of EF, here are some very interesting blogs you can dig through:
 
 * [WinFS Team Blog](https://docs.microsoft.com/archive/blogs/winfs/)
-* [Data Access Blog](https://docs.microsoft.com/en-us/archive/blogs/dataaccess/)
+* [Data Access Blog](https://docs.microsoft.com/archive/blogs/dataaccess/)
 * [ADO.NET Blog](https://docs.microsoft.com/archive/blogs/adonet/)
 * [EF Design Blog](https://docs.microsoft.com/archive/blogs/efdesign/)
