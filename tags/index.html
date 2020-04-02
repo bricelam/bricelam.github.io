@@ -3,7 +3,13 @@ layout: page
 title: Tags
 ---
 
+<p>
 {% assign sorted_tags = site.tags | sort %}
+{%- for tag in sorted_tags %}
+  <a href="#{{ tag[0] }}">#{{ tag[0] }}</a>  
+{% endfor -%}
+</p>
+
 {%- for tag in sorted_tags -%}
   <h2 id="{{ tag[0] }}" class="post-list-heading">#{{ tag[0] }}</h2>
   <ul class="post-list">
