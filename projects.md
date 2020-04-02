@@ -7,9 +7,9 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
-* [Microsoft.Data.Sqlite][1] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
+* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
 * [Entity Framework][2] - An object-relational mapper for .NET (*2010 to present*)
-* [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to present*)
+* [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
 Contributions
@@ -17,6 +17,7 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
 * [Npgsql][12] - Fixed a bug in geometry literals in the EF Core provider (*2018*)
 * [xUnit.net][5]
@@ -29,9 +30,8 @@ a list of contributions that I've made to various projects.
 * [Scripting Layer for Android][10] - Added support for JavaScript (*2009*)
 
 
-  [1]: https://github.com/aspnet/Microsoft.Data.Sqlite
   [2]: https://github.com/aspnet/EntityFrameworkCore
-  [3]: http://www.bricelam.net/ImageResizer/
+  [3]: http://github.com/bricelam/ImageResizer
   [4]: http://sourceforge.net/projects/orm
   [5]: https://github.com/xunit/xunit
   [6]: http://system.data.sqlite.org
@@ -41,3 +41,4 @@ a list of contributions that I've made to various projects.
   [10]: https://github.com/damonkohler/sl4a
   [11]: https://github.com/NetTopologySuite
   [12]: https://github.com/npgsql
+  [13]: https://github.com/microsoft/PowerToys
