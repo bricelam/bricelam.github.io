@@ -18,6 +18,7 @@ Part of being a good citizen in the open source community is regularly contribut
 a list of contributions that I've made to various projects.
 
 * [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
+* [EF Core Power Tools][1] - Packaged up the DACPAC reader for use with dotnet-ef (*2020*)
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
 * [Npgsql][12] - Fixed a bug in geometry literals in the EF Core provider (*2018*)
 * [xUnit.net][5]
@@ -30,6 +31,7 @@ a list of contributions that I've made to various projects.
 * [Scripting Layer for Android][10] - Added support for JavaScript (*2009*)
 
 
+  [1]: https://github.com/ErikEJ/EFCorePowerTools
   [2]: https://github.com/aspnet/EntityFrameworkCore
   [3]: http://github.com/bricelam/ImageResizer
   [4]: http://sourceforge.net/projects/orm
