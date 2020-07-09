@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Links
+title: More
 permalink: /links/
 ---
 
-These are a few of my favorite things.
+Want more? Here are some links to a few of my favorite things.
 
 Blogs
 =====
@@ -23,6 +23,24 @@ Blogs
 * [Julie Lerman](http://thedatafarm.com/blog/)
 * [Jeff Handley](https://jeffhandley.com/)
 * [Mads Kristensen](https://madskristensen.net/)
+
+Podcasts
+========
+* [.NET Rocks!](https://www.dotnetrocks.com/)
+* [The 6 Figure Developer](https://6figuredev.com/)
+* [Merge Conflict](https://www.mergeconflict.fm/)
+
+YouTube Channels
+================
+
+* [Microsoft Developer](https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g)
+* [dotNET](https://www.youtube.com/channel/UCvtT19MZW8dq5Wwfu6B0oxw)
+* [.NET Foundation](https://www.youtube.com/channel/UCiaZbznpWV1o-KLxj8zqR6A)
+  * [Entity Framework: .NET Community Standup](https://www.youtube.com/playlist?list=PL1rZQsJPBU2Ry_KbYPklhVu0JhP0kOFbj)
+* [Microsoft Visual Studio](https://www.youtube.com/channel/UChqrDOwARrxdJF-ykAptc7w)
+* [Windows Developer](https://www.youtube.com/channel/UCzLbHrU7U3cUDNQWWAqjceA)
+* [Brackeys](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA)
+* [Xamarin Developers](https://www.youtube.com/channel/UCe-f02uZgEXdHmHpC3loAQg)
 
 Docs
 ====
