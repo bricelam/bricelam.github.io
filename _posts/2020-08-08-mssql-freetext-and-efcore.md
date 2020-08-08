@@ -16,7 +16,7 @@ Use this connection string to connect to the docker image.
 
     Data Source=(local)\MSSQLSERVER;Initial Catalog=BlogsDatabase;User ID=sa;Password=Password12!
 
-Now that we've got the prerequisites installed, let's assume we're starting with a Post entity that has a Content property we'd like to search.
+Now that we've got the prerequisites installed, let's assume we're starting with a Post entity type that has a Content property we'd like to search.
 
 ``` cs
 class Post
@@ -61,7 +61,7 @@ To issue a full-text query from EF, use the Contains or FreeText functions:
 ``` cs
 var results = from p in db.Posts
               where EF.Functions.FreeText(p.Content, query)
-              select
+              select p;
 ```
 
 The query string has an entire syntax of its own. Check out the [Full-Text Query](https://docs.microsoft.com/sql/relational-databases/search/query-with-full-text-search) documentation to learn more.
