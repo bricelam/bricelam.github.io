@@ -6,7 +6,7 @@ tags: [ entity-framework, sql-server ]
 
 [Full-Text Search](https://docs.microsoft.com/sql/relational-databases/search/full-text-search) is a feature of Microsoft SQL Server that lets you perform search engine like queries against the string properties of your entities.
 
-The Full-Text feature is only available on the Developer Edition of SQL Server or higher. I like to use Docker for local development.
+The Full-Text feature isn't available on the LocalDB (the version of SQL Server that comes with Visual Studio). I like to use Developer Edition on Docker for local development.
 
 ``` sh
 docker run -d -p 1433:1433 -e SA_PASSWORD=Password12! -e ACCEPT_EULA=Y mcr.microsoft.com/mssql/server
