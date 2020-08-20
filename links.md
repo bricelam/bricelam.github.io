@@ -131,6 +131,7 @@ Libraries
     * [IBM.Data.DB2.Core](https://www.nuget.org/packages/IBM.Data.DB2.Core)
   * [Dapper](https://www.nuget.org/packages/Dapper)
   * [sqlite-net](https://www.nuget.org/packages/sqlite-net-pcl)
+  * [RepoDb](https://www.nuget.org/packages/RepoDb)
   * [linq2db](https://www.nuget.org/packages/linq2db)
   * [Dotmim.Sync](https://github.com/Mimetis/Dotmim.Sync)
   * [dotMorten.Microsoft.SqlServer.Types](https://www.nuget.org/packages/dotMorten.Microsoft.SqlServer.Types)
