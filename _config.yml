@@ -4,10 +4,15 @@ description: Highlighting some of my more technical adventures
 disqus:
   shortname: bricelam
 application_insights: bc55e726-6559-4f0c-8c4d-85be3d47ec33
-author: Brice Lambson
-email: brice@bricelam.net
-github_username: bricelam
-twitter_username: bricelambs
+author:
+  name: Brice Lambson
+  email: brice@bricelam.net
+minima:
+  social_links:
+    github:  bricelam
+    twitter: bricelambs
+    youtube_channel: UCKQoPIhSjqnnq20sD9fGbeA
+    youtube_channel_name: Brice Lambson
 header_pages:
   - about.md
   - projects.md
@@ -18,7 +23,9 @@ paginate_path: "/page/:num/"
 show_excerpts: true
 
 # Build settings
-theme: minima
+# TODO: Revert when Minima 3.0 is released
+#theme: minima
+remote_theme: jekyll/minima
 plugins:
   - jekyll-feed
   - jekyll-mentions
