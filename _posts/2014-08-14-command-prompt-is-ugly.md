@@ -14,6 +14,6 @@ significantly better.
 
 Here are the registration entries you can use to apply it.
 
-{% gist bricelam/2172bb1b578147694f1f %}
+<script src="https://gist.github.com/bricelam/2172bb1b578147694f1f.js"></script>
 
 Save them to a .reg file and double-click it.

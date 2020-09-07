@@ -8,7 +8,6 @@ author: Brice Lambson
 email: brice@bricelam.net
 github_username: bricelam
 twitter_username: bricelambs
-theme: minima
 header_pages:
   - about.md
   - projects.md
@@ -19,18 +18,10 @@ paginate_path: "/page/:num/"
 show_excerpts: true
 
 # Build settings
-future: true
+theme: minima
 plugins:
   - jekyll-feed
   - jekyll-mentions
   - jekyll-redirect-from
-  - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
-gfm_quirks: paragraph_end
-gist:
-  noscript: false
-jailed: false
-kramdown:
-  math_engine: mathjax
-  syntax_highlighter: rouge

@@ -2,7 +2,7 @@
 layout: post
 title: SQLite Full-Text Search and EF Core
 tags: [ entity-framework, sqlite ]
-permalink: /2020/09/08/sqlite-fts-and-efcore.html
+redirect_from: /2020/09/08/sqlite-fts-and-efcore.html
 ---
 
 [FTS5](https://www.sqlite.org/fts5.html) is an extension to SQLite that enables search engine like queries against string properties in your entities.

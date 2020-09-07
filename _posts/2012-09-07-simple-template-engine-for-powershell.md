@@ -7,7 +7,7 @@ tags: powershell
 
 Here is a simple, token-replacement template engine for PowerShell that you might find useful.
 
-{% gist bricelam/a5debdbfc495eb7b116c %}
+<script src="https://gist.github.com/bricelam/a5debdbfc495eb7b116c.js"></script>
 
 You use it like this.
 

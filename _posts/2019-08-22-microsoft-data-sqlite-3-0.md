@@ -11,7 +11,7 @@ Beware, there are a handful of breaking changes in this release that could break
 release notes carefully.
 
 Better database types
----------------------
+=====================
 
 SQLite has a [dynamic type system][3] with only four intrinsic types--INTEGER (a signed 64-bit integer), REAL (a 64-bit
 floating point value), TEXT, and BLOB. This presents several problems when creating an ADO.NET provider. We've had a lot
@@ -19,7 +19,7 @@ of feedback in this area and wanted to use version 3.0 to make a few breaking ch
 inference.
 
 New char mapping (breaking change)
-================
+----------------
 
 `char` values now map to `TEXT`. These were previously mapped to INTEGER values encoded using UTF-16. This made queries
 unnecessarily complex and would impose arbitrary restrictions on future UTF-8 capabilities.
@@ -51,7 +51,7 @@ command.Parameters.AddWithValue("$value", 'Y')
 ```
 
 New Guid mapping (breaking change)
-================
+----------------
 
 Similarly, `Guid` values also now map to `TEXT`. These were previously mapped to BLOB values, but we've since learned
 that there is no standard binary format for these values. This caused problems when accessing a database using other
@@ -92,14 +92,14 @@ command.Parameters.AddWithValue("$value", new Guid())
 ```
 
 Better inference
-================
+----------------
 
 Because of SQLite's dynamic type system, there are a few places where a column's database type isn't available but
 ADO.NET requires us to return something. We've improved how we infer database types in these situations and have
 standardized on returning BLOB when we simply don't know.
 
 Other breaking changes
-----------------------
+======================
 
 There are a few other minor breaking changes in this release.
 
@@ -118,7 +118,7 @@ In addition to the execute methods on SqliteConnection, these exceptions can now
 Dispose on SqliteDataReader.
 
 Re-opening a connection
------------------------
+=======================
 
 In previous versions of Microsoft.Data.Sqlite, things like foreign key enforcement, user-defined functions, and SQLite
 extensions were cleared when a connection was closed. While this reflected the underlying behavior of SQLite, it
@@ -146,7 +146,7 @@ re-open.
 | Recursive Triggers | false   | When true, sends `PRAGMA recursive_triggers` on connection open. When false, no pragma is sent. |
 
 Blob I/O
---------
+========
 
 @AlexanderTaeschner kept up his contribution streak and enabled streaming values into and out of a database. This
 feature of SQLite can reduce the amount of memory used by your application. It's particularly useful when parsing or
@@ -201,7 +201,7 @@ using (var reader = command.ExecuteReader())
 ```
 
 Feedback
---------
+========
 
 [Let us know][6] if you find any issues or otherwise have feedback about Microsoft.Data.Sqlite.
 

@@ -40,14 +40,14 @@ using (var command = connection.CreateCommand())
 ```
 
 Faster in 2.1
--------------
+=============
 In Microsoft.Data.Sqlite version 2.1.0 this code will get *even faster* thanks to a contribution by @AlexanderTaeschner.
 He implemented `SqliteCommand.Prepare()` which allows you to precompile a command. But even if you don't call the
 method, subsequent executions will reuse the compilation of the first one. My initial benchmarking indicates up to 4x
 more inserts per second in some cases!
 
 Dangerously Fast
-----------------
+================
 If you're willing to take risks, you can squeeze even more speed out of it by using a couple `PRAGMA` statements. Make
 sure, however, that you understand [the consequences][2] of doing this.
 

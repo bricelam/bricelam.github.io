@@ -13,7 +13,7 @@ however, don't come with encryption.
 SQLite database files. They all seem to follow the same general pattern, so this post applies to all of them.
 
 Bring Your Own Library
-----------------------
+======================
 The first step is to add a version of the native `sqlite3` library to you application that has encryption.
 `Microsoft.Data.Sqlite` depends on [SQLitePCL.raw][7] which makes it very easy to use SQLCipher.
 
@@ -25,7 +25,7 @@ Install-Package SQLitePCLRaw.bundle_sqlcipher
 SQLitePCL.raw also enables you to bring your own build of SQLite, but we won't cover that in this post.
 
 Specify the Key
----------------
+===============
 To enable encryption, Specify the key immediately after opening the connection. Do this by issuing a `PRAGMA key`
 statement. It may be specified as either a string or BLOB literal. SQLite, unfortunately, doesn't support parameters in
 `PRAGMA` statements. :disappointed: Use the `quote()` function instead to prevent SQL injection.
@@ -45,7 +45,8 @@ command.ExecuteNonQuery();
 // Interact with the database here
 ```
 
-### Updated in 3.0
+Updated in 3.0
+--------------
 
 Note, if you're using Microsoft.Data.Sqlite version 3.0 or newer, the above commands are unnessary. The `Password` connection string keyword can be used instead.
 
@@ -60,7 +61,7 @@ connection.Open();
 ```
 
 Rekey the Database
-------------------
+==================
 If you want to change the encryption key of a database, issue a `PRAGMA rekey` statement. To decrypt the database,
 specify `NULL`.
 
