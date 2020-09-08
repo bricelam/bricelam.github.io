@@ -22,7 +22,7 @@ At this point, you can start ad-hoc testing against the server using the followi
 
 To run the full test suite against the server, set a few environment variables first.
 
-```shell
+```bat
 SET "Test__SqlServer__DefaultConnection=Data Source=(local)\MSSQLSERVER;User ID=sa;Password=Password12!"
 SET Test__SqlServer__SupportsMemoryOptimized=true
 SET Test__SqlServer__SupportsHiddenColumns=true

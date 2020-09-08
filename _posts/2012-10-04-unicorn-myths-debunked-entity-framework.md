@@ -18,7 +18,7 @@ An experiment
 =============
 Here is some simple code that prints out version information about the Entity Framework assembly.
 
-```csharp
+```cs
 var assembly = typeof(DbContext).Assembly;
 var name = assembly.GetName();
 var info = FileVersionInfo.GetVersionInfo(assembly.Location);

@@ -72,7 +72,7 @@ would look like:
 Now it's time to write the code. First, I wrote some enums that would allow users to filter the kinds of updates they
 wanted to be notified for.
 
-```csharp
+```cs
 enum ReleaseStatus
 {
     Stable = 1,
@@ -93,7 +93,7 @@ of each other so that a filter of *Alpha* will update to a release status of *St
 
 Finally, here is the component that allows an application to check for updates:
 
-```csharp
+```cs
 class UpdateChecker
 {
     public void CheckForUpdates(string feedUrl, UpdateFilter filter)

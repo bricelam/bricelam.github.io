@@ -12,7 +12,7 @@ The two things you can to do to speed up inserts are:
 1. Use a transaction.
 2. Re-use the same `INSERT` command.
 
-```csharp
+```cs
 using (var transaction = connection.BeginTransaction())
 using (var command = connection.CreateCommand())
 {

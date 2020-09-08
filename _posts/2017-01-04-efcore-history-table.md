@@ -9,7 +9,7 @@ This post demonstrates the different ways you can customize the migrations histo
 The simplest scenario is when you just want to change the table name or schema. This can be done using the
 `MigrationsHistoryTable` method in `OnConfiguring` (or `ConfigureServices` on ASP.NET Core). Here is an example.
 
-```csharp
+```cs
 protected override void OnConfiguring(DbContextOptionsBuilder options)
     => options.UseSqlServer(
         connectionString,
@@ -21,14 +21,14 @@ provider-specific `IHistoryRepository` service. If the provider uses the base `H
 can customize the columns by overriding the `ConfigureTable` method. Here is an example of changing the MigrationId
 column name to *Id*.
 
-```csharp
+```cs
 protected override void OnConfiguring(DbContextOptionsBuilder options)
     => options
         .UseSqlServer(connectionString)
         .ReplaceService<SqlServerHistoryRepository, MyHistoryRepository>();
 ```
 
-```csharp
+```cs
 class MyHistoryRepository : SqlServerHistoryRepository
 {
     public MyHistoryRepository(

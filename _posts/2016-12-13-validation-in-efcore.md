@@ -10,7 +10,7 @@ Validation][1] to read more about it.
 We don't perform validation in EF Core, but there is a quick way to add at least some of it back. You can override
 `SaveChanges` and use the `Validator`. Here is some code.
 
-```csharp
+```cs
 class MyContext : DbContext
 {
     public override int SaveChanges()

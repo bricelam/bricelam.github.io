@@ -7,7 +7,21 @@ tags: powershell
 
 Here is a simple, token-replacement template engine for PowerShell that you might find useful.
 
-<script src="https://gist.github.com/bricelam/a5debdbfc495eb7b116c.js"></script>
+```powershell
+function Merge-Tokens($template, $tokens)
+{
+    return [regex]::Replace(
+        $template,
+        '\$(?<tokenName>\w+)\$',
+        {
+            param($match)
+
+            $tokenName = $match.Groups['tokenName'].Value
+
+            return $tokens[$tokenName]
+        })
+}
+```
 
 You use it like this.
 

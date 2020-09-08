@@ -51,7 +51,7 @@ it ourselves fixing the two problems mentioned above. I've created a database in
 after the behavior of the `CreateDatabaseIfNotExists` initializer. Most of the code here can also be used to create one
 that mirrors `DropCreateDatabaseIfModelChanges` too. Here it is.
 
-```csharp
+```cs
 class CreateMySqlDatabaseIfNotExists<TContext>
     : IDatabaseInitializer<TContext>
         where TContext : DbContext
@@ -162,7 +162,7 @@ create the `__MigrationHistory` table.
 You can use the new initializer by calling `Database.SetInitializer`. One of the best places to do this is in your
 context's static constructor.
 
-```csharp
+```cs
 class MyContext : DbContext
 {
     static MyContext()

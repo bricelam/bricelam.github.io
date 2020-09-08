@@ -8,7 +8,7 @@ tags: [ entity-framework, sql-server ]
 
 The Full-Text feature isn't available on the LocalDB (the version of SQL Server that comes with Visual Studio). I like to use Developer Edition on Docker for local development.
 
-``` sh
+```sh
 docker run -d -p 1433:1433 -e SA_PASSWORD=Password12! -e ACCEPT_EULA=Y mcr.microsoft.com/mssql/server
 ```
 
@@ -18,7 +18,7 @@ Use this connection string to connect to the docker image.
 
 Now that we've got the prerequisites installed, let's assume we're starting with a Post entity type that has a Content property we'd like to search.
 
-``` cs
+```cs
 class Post
 {
     public int Id { get; set; }
@@ -28,13 +28,13 @@ class Post
 
 First, we need to add a full-text index to the Content column. Do this by adding a new Migration.
 
-``` sh
+```sh
 dotnet ef migrations add AddFullTextIndexToPostContent
 ```
 
 Inside the `Up` method of the migration, add the following.
 
-``` cs
+```cs
 migrationBuilder.Sql(
     sql: "CREATE FULLTEXT CATALOG ftCatalog AS DEFAULT;",
     suppressTransaction: true);
@@ -52,13 +52,13 @@ Neither operation can be executed inside a transaction, so we need to suppress t
 
 Don't forget to apply the migration.
 
-``` sh
+```sh
 dotnet ef database update
 ```
 
 To issue a full-text query from EF, use the Contains or FreeText functions:
 
-``` cs
+```cs
 var results = from p in db.Posts
               where EF.Functions.FreeText(p.Content, query)
               select p;

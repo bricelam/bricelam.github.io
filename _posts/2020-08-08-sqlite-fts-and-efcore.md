@@ -9,7 +9,7 @@ redirect_from: /2020/09/08/sqlite-fts-and-efcore.html
 
 Let's assume we're starting with a Post entity type that has a Content property we'd like to search.
 
-``` cs
+```cs
 class Post
 {
     public int Id { get; set; }
@@ -21,7 +21,7 @@ FTS5 requires you to create an entirely new table. I prefer leaving the existing
 
 Here's a new entity type to represent the FTS5 table we're going to add.
 
-``` cs
+```cs
 class FTSPost
 {
     public int RowId { get; set; }
@@ -38,7 +38,7 @@ RowId is a hidden column in SQLite used to uniquely identity each row in a table
 
 Match and Rank are used to represent hidden FTS5 columns that we'll use when querying. The Match property needs to map to a column with the same name as the table.
 
-``` cs
+```cs
 modelBuilder.Entity<FTSPost>(x =>
 {
     x.HasKey(fts => fts.RowId);
@@ -52,7 +52,7 @@ modelBuilder.Entity<FTSPost>(x =>
 
 Don't forget to remove the Content property from Post and add a navigation property.
 
-``` cs
+```cs
 class Post
 {
     public int Id { get; set; }
@@ -66,7 +66,7 @@ class Post
 
 Now that we have the EF model the way we want it, let's add a new [migration](https://docs.microsoft.com/ef/core/managing-schemas/migrations/) and use it to create the table. We'll rearrange the order of operations a bit so we can copy data from the old table into the new one. Warning, the `DropColumn` operation will fail on versions of EF Core older than 5.0, but since the column is nullable, you can just remove the operation from the migration and let your app ignore the old column.
 
-``` cs
+```cs
 // UNDONE: Using an FTS5 table instead
 //migrationBuilder.CreateTable(
 //    name: "FTSPost",
@@ -90,7 +90,7 @@ migrationBuilder.DropColumn(
 
 Our database is ready now. We're ready to query. To help us, let's map the Highlight and Snippet FTS5 functions using the `[DbFunction]` attribute on some methods in our DbContext.
 
-``` cs
+```cs
 [DbFunction]
 public string Highlight(string match, string column, string open, string close)
     => throw new NotImplementedException();
@@ -102,7 +102,7 @@ public string Snippet(string match, string column, string open, string close, st
 
 Here is an example showing how to query.
 
-``` cs
+```cs
 var results = from fts in db.Set<FTSPost>()
               where fts.Match == query
               orderby fts.Rank

@@ -67,7 +67,7 @@ The `*.csproj` files would simply reference their corresponding `References.prop
     <DepencencyRef Include="xunit"/>
   </ItemGroup>
 </Project>
-``` 
+```
 
 And that's it! Your dependency versions are defined in a single place for your entire solution, and each project
 defines which dependencies it needs.

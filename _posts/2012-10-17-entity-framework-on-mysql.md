@@ -30,7 +30,7 @@ Specifically, we will be using Artists and Albums.
 
 Add the following two classes to your project.
 
-```csharp
+```cs
 public class Artist
 {
     public Artist()
@@ -67,7 +67,7 @@ install Entity Framework.
 
 Now, add the context class to your project.
 
-```csharp
+```cs
 class ChinookContext : DbContext
 {
     public DbSet<Artist> Artists { get; set; }
@@ -114,7 +114,7 @@ Start Coding
 ============
 Ok, we should be ready to start coding our application. Let's create some artists and albums.
 
-```csharp
+```cs
 using (var db = new ChinookContext())
 {
     db.Artists.Add(
@@ -143,7 +143,7 @@ using (var db = new ChinookContext())
 
 Now let's see how to read the data from the database.
 
-```csharp
+```cs
 using (var db = new ChinookContext())
 {
     var artists = from a in db.Artists
@@ -160,7 +160,7 @@ using (var db = new ChinookContext())
 
 Finally, here is some code that updates and deletes some data.
 
-```csharp
+```cs
 using (var db = new ChinookContext())
 {
     var police = db.Artists.Single(a => a.Name == "The Police");

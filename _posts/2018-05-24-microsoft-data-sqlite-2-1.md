@@ -32,7 +32,7 @@ User-defined functions
 User-defined functions can now be created by using the `SqliteConnection.CreateFunction()` and `CreateAggregate()`
 overloads. For example, you can create a scalar function to calculate the volume of a cylinder.
 
-``` csharp
+```cs
 connection.CreateFunction(
     "volume",
     (double radius, double height)
@@ -41,7 +41,7 @@ connection.CreateFunction(
 
 And use the function in SQL to find the biggest cylinder.
 
-``` sql
+```sql
 SELECT id, volume(radius, height) AS volume
 FROM cylinder
 ORDER BY volume DESC
@@ -60,13 +60,13 @@ Custom collations
 Collating sequences are used to compare strings. SQLite has a built-in NOCASE collation you can use to perform
 case-insensitive comparisons.
 
-``` sql
+```sql
 SELECT 'Λ' = 'λ' COLLATE NOCASE;
 ```
 Unfortunately, it only works with the ASCII characters A through Z. With the `CreateCollation()` method on
 `SqliteConnection`, you can now define your own (or redefine existing ones).
 
-``` csharp
+```cs
 connection.CreateCollation(
     "NOCASE",
     (x, y) => string.Compare(x, y, ignoreCase: true));

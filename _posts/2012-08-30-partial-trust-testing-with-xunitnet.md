@@ -23,7 +23,7 @@ Opt-in tests
 ============
 With this approach, individual tests can opt-in to running under partial trust using the `PartialTrustFact` attribute.
 
-```csharp
+```cs
 public class MyTests : MarshalByRefObject
 {
     [Fact]
@@ -51,7 +51,7 @@ This is the exact opposite of the previous approach. Instead of partial trust te
 out by using the `FullTrust` attribute. To use this approach, decorate your test class with the `PartialTrustFixture`
 attribute.
 
-```csharp
+```cs
 [PartialTrustFixture]
 public class MyTests : MarshalByRefObject
 {
@@ -72,7 +72,7 @@ public class MyTests : MarshalByRefObject
 This approach is a little more flexible in that your partial trust tests are no longer required to be simple `Fact`
 tests. Here is an example of a partial trust `Theory`.
 
-```csharp
+```cs
 [PartialTrustFixture]
 public class MyTests : MarshalByRefObject
 {
@@ -88,7 +88,7 @@ public class MyTests : MarshalByRefObject
 
 The `PartialTrustFixture` attribute can also be applied to base classes.
 
-```csharp
+```cs
 [PartialTrustFixture]
 public class TestBase : MarshalByRefObject
 {
@@ -109,7 +109,7 @@ Mixed-trust tests
 There may be cases when you need to perform some setup that cannot be done in partial trust. If so, you will have to
 drop down to using the `PartialTrustSandbox` component.
 
-```csharp
+```cs
 public class MyTests : MarshalByRefObject
 {
     [Fact]

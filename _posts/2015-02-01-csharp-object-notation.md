@@ -12,7 +12,7 @@ Object Initializers
 ===================
 Consider the following class.
 
-```csharp
+```cs
 class Point
 {
     public int X { get; set; }
@@ -22,13 +22,13 @@ class Point
 
 Object initializers allow you to create a new object and set its properties in the same statement. Here is an example.
 
-```csharp
+```cs
 var x = new Point { X = 0, Y = 1 };
 ```
 
 This syntax can be nested and and shortened by allocating instances inside constructors. Consider the following class.
 
-```csharp
+```cs
 class Rectangle
 {
     public Point P1 { get; } = new Point();
@@ -38,7 +38,7 @@ class Rectangle
 
 It can be initialized as follows.
 
-```csharp
+```cs
 var x = new Rectangle
 {
     P1 = { X = 0, Y = 1 },
@@ -52,7 +52,7 @@ Collection initializers let you create and add items to a collection in the same
 `IEnumerable` and have a method named `Add`. C# 6 even allows the `Add` method to be an extension method. Consider the
 following "class". (I know it won't actually compile.)
 
-```csharp
+```cs
 class IntCollection : IEnumerable
 {
     public void Add(int value) { }
@@ -61,13 +61,13 @@ class IntCollection : IEnumerable
 
 It can be initialized using the following syntax.
 
-```csharp
+```cs
 var x = new IntCollection { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 ```
 
 The `Add` method can have multiple parameters...
 
-```csharp
+```cs
 class LineString : IEnumerable
 {
     public void Add(int x, int y) { }
@@ -76,33 +76,33 @@ class LineString : IEnumerable
 
 ...and be initialized like this.
 
-```csharp
+```cs
 var x = new LineString { { 0, 1 }, { 2 , 3 }, { 4 , 5 } };
 ```
 
 The `Add` method can even be overloaded!
 
-```csharp
+```cs
 class StringAndIntCollection : IEnumerable
 {
     public void Add(string value) { }
     public void Add(int value) { }
 }
 ```
-```csharp
+```cs
 var x = new StringAndIntCollection { 0, "1", 2, "3" };
 ```
 
 Collection initializers can also be nested and shortened inside object initializers.
 
-```csharp
+```cs
 class Contact
 {
     public string Name { get; set; }
     public List<string> PhoneNumbers { get; } = new List<string>();
 }
 ```
-```csharp
+```cs
 var x = new Contact
 {
     Name = "Chris Smith",
@@ -112,14 +112,14 @@ var x = new Contact
 
 The only downfall of collection initializers is that they can't be used with object initializers on the same instance.
 
-```csharp
+```cs
 class NamedIntCollection : IEnumerable
 {
     public string Name { get; set; }
     public void Add(int value) { }
 }
 ```
-```csharp
+```cs
 // Like this...
 var x = new NamedIntCollection { Name = "Primes" };
 x.Add(2);
@@ -138,7 +138,7 @@ Index Initializers
 ==================
 Index initializers are new to C# 6. In order to use them, an indexer must be present.
 
-```csharp
+```cs
 class IntToStringMap
 {
     public string this[int index] { get; set; }
@@ -147,7 +147,7 @@ class IntToStringMap
 
 Their syntax is pretty intuitive.
 
-```csharp
+```cs
 var x = new IntToStringMap
 {
     [7] = "seven",
@@ -158,13 +158,13 @@ var x = new IntToStringMap
 
 The indexer can have multiple parameters.
 
-```csharp
+```cs
 class Bitmap
 {
     public bool this[int x, int y] { get; set; }
 }
 ```
-```csharp
+```cs
 var x = new Bitmap
 {
     [0, 0] = true,
@@ -176,14 +176,14 @@ var x = new Bitmap
 
 It can be overloaded too.
 
-```csharp
+```cs
 class IntToStringAndBackMap
 {
     public string this[int index] { get; set; }
     public int this[string index] { get; set; }
 }
 ```
-```csharp
+```cs
 var x = new IntToStringAndBackMap
 {
     [0] = "zero",
@@ -193,7 +193,7 @@ var x = new IntToStringAndBackMap
 
 The syntax can also be shortened by instantiating objects inside the getter.
 
-```csharp
+```cs
 class ScatterPlot
 {
     public Point this[int index]
@@ -203,7 +203,7 @@ class ScatterPlot
     }
 }
 ```
-```csharp
+```cs
 var x = new ScatterPlot
 {
     [0] = { X = 0, Y = 1},
@@ -213,14 +213,14 @@ var x = new ScatterPlot
 
 Indexer initializers, unlike collection initializers, can be mixed with object initializers.
 
-```csharp
+```cs
 class NamedMap
 {
     public string Name { get; set; }
     public string this[string index] { get; set; }
 }
 ```
-```csharp
+```cs
 var x = new NamedMap
 {
     Name = "Atbash Cipher",
@@ -235,7 +235,7 @@ Pop Quiz
 Alright, it's time to put everything you've learned to the test. Can you come up with a class that enables the following
 syntax? :wink:
 
-```csharp
+```cs
 var x = new Thing
 {
     A = 1,
@@ -251,7 +251,7 @@ If we were to come up with a standard, I'm not sure what we'd call it since the 
 CoffeeScript. The following, however, is an example of a theoretical C# Object Notation document that could be used to
 create a SQL script.
 
-```csharp
+```cs
 new Schema
 {
     new Table

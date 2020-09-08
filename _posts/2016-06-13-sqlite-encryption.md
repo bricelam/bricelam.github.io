@@ -30,7 +30,7 @@ To enable encryption, Specify the key immediately after opening the connection. 
 statement. It may be specified as either a string or BLOB literal. SQLite, unfortunately, doesn't support parameters in
 `PRAGMA` statements. :disappointed: Use the `quote()` function instead to prevent SQL injection.
 
-```csharp
+```cs
 connection.Open();
 
 var command = connection.CreateCommand();
@@ -50,7 +50,7 @@ Updated in 3.0
 
 Note, if you're using Microsoft.Data.Sqlite version 3.0 or newer, the above commands are unnessary. The `Password` connection string keyword can be used instead.
 
-```csharp
+```cs
 // Add or update the Password connection string keyword
 connection.ConnectionString =
     new SqliteConnectionStringBuilder(connection.ConnectionString)
@@ -65,7 +65,7 @@ Rekey the Database
 If you want to change the encryption key of a database, issue a `PRAGMA rekey` statement. To decrypt the database,
 specify `NULL`.
 
-```csharp
+```cs
 var command = connection.CreateCommand();
 command.CommandText = "PRAGMA rekey = " + newPassword;
 command.ExecuteNonQuery();

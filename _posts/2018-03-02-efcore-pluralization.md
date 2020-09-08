@@ -15,21 +15,21 @@ install it.
 
 To install and use the package inside Visual Studio using NuGet's Package Manager Console (PMC), type the following.
 
-``` powershell
+```powershell
 Install-Package Bricelam.EntityFrameworkCore.Pluralizer
 Scaffold-DbContext 'Filename=chinook.db' Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 If you're on a command-line instead, type this.
 
-``` shell
+```sh
 dotnet add package Bricelam.EntityFrameworkCore.Pluralizer
 dotnet ef dbcontext scaffold "Filename=chinook.db" Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 After installing it, you'll get pluralized `DbSet` property names...
 
-``` csharp
+```cs
 class ChinookContext : DbContext
 {
     public DbSet<Artist> Artists { get; set; }
@@ -40,7 +40,7 @@ class ChinookContext : DbContext
 
 ...and pluralized collection navigation property names.
 
-``` csharp
+```cs
 class Artist
 {
     // ...

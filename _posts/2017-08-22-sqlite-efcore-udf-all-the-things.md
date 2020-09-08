@@ -12,7 +12,7 @@ Without UDFs
 ============
 Here is our starting code. We store `People` entities with a `Name` property in our database.
 
-```csharp
+```cs
 class Person
 {
     [Key]
@@ -22,7 +22,7 @@ class Person
 
 Our `DbContext` class allows us to interact with the SQLite database. It has a helper method we use to greet people.
 
-```csharp
+```cs
 class HelloContext : DbContext
 {
     public DbSet<Person> People { get; set; }
@@ -37,7 +37,7 @@ class HelloContext : DbContext
 
 We use this query to greet all the users.
 
-```csharp
+```cs
 var greetings = Enumerable.ToList(
     from p in db.People
     select new { Value = HelloContext.Greet(p.Name) });
@@ -64,7 +64,7 @@ faster, :trollface: so you decide to create a user-defined function to replace t
 To get EF Core to generate the appropriate SQL, simply add the `[DbFunction]` attribute. This feature was recently
 contributed by @pmiddleton.
 
-```csharp
+```cs
 [DbFunction("greet")]
 public static string Greet(string name)
     => $"Hello, {name}.";
@@ -87,7 +87,7 @@ API was contributed by @AlexanderTaeschner.
 Since UDF registrations in SQLite only persists until the connection is closed, we also need to modify our `DbContext`
 a bit.
 
-```csharp
+```cs
 protected override void OnConfiguring(DbContextOptionsBuilder options)
 {
     var connection = new SqliteConnection("Data Source=Hello.db");

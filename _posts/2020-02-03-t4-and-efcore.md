@@ -60,20 +60,20 @@ I took this opportunity to fix a few of the pet peeves I have with EF Core's bui
 
 To get started, clone the repository and copy the EFCore.TextTemplating project into your solution. You'll also need to add an assembly-level attribute to your app:
 
-``` cs
+```cs
 [assembly: DesignTimeServicesReference(
     "EFCore.TextTemplating.DesignTimeServices, EFCore.TextTemplating")]
 ```
 
 After doing this, the templates should now be used whenever you reverse engineer a model from the database:
 
-``` sh
+```sh
 dotnet ef dbcontext scaffold "Data Source=Chinook.db" Microsoft.EntityFrameworkCore.Sqlite
 ```
 
 If you're not using Visual Studio, you'll need to use [dotnet-t4](https://github.com/mono/t4) after editing the template files to re-generate the code-behind files:
 
-``` sh
+```sh
 dotnet tool install -g dotnet-t4
 
 t4 MyDbContextGenerator.tt -c MyDbContextGenerator -o MyDbContextGenerator.cs

@@ -26,7 +26,7 @@ unnecessarily complex and would impose arbitrary restrictions on future UTF-8 ca
 
 You can migrate the data of char columns created using previous version by using SQL like the following.
 
-``` sql
+```sql
 -- Convert char values from INTEGER to TEXT
 UPDATE myTable
 SET charColumn = char(charColumn)
@@ -36,7 +36,7 @@ WHERE typeof(charColumn) = 'integer';
 Alternatively, you could keep the INTEGER values in the database and update your application code to specify a parameter
 type as follows.
 
-``` cs
+```cs
 var command = connection.CreateCommand();
 command.CommandText =
 @"
@@ -59,7 +59,7 @@ technologies which interpret the bytes differently.
 
 To migrate your Guid columns, use the following SQL.
 
-``` sql
+```sql
 -- Convert Guid values from BLOB to TEXT
 UPDATE myTable
 SET guidColumn = hex(substr(guidColumn, 4, 1)) ||
@@ -77,7 +77,7 @@ WHERE typeof(guidColumn) == 'blob';
 
 Or, continue using BLOB values by specifying a parameter type:
 
-``` csharp
+```cs
 var command = connection.CreateCommand();
 command.CommandText =
 @"
@@ -155,7 +155,7 @@ transforming large amounts of data.
 Use the new `SqliteBlob` type to stream values into a database. This type inherits from Stream and works with all the
 existing Stream goodness in .NET. Here is an example.
 
-``` csharp
+```cs
 // Insert a row to hold the data
 var command = connection.CreateCommand();
 command.CommandText =
@@ -177,7 +177,7 @@ using (var blobStream = new SqliteBlob(connection, "myTable", "blobColumn", rowi
 
 To stream values out of a database, use `SqliteDataReader.GetStream()`.
 
-``` csharp
+```cs
 // NB: Must select rowid (or an alias)
 var command = connection.CreateCommand();
 command.CommandText =
