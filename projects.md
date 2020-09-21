@@ -9,6 +9,11 @@ is a list of projects that I've actively participated on for a season or two.
 
 * [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
 * [Entity Framework][2] - An object-relational mapper for .NET (*2010 to present*)
+  * [EntityFrameworkCore.SqlServer.HierarchyId][14] - Adds SQL Server hierarchyid support
+  * [EntityFrameworkCore.FSharp][15] - Adds F# support
+  * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
+  * [EFCore.TextTemplating][17] - Use T4 to customize the model
+  * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
@@ -32,7 +37,7 @@ a list of contributions that I've made to various projects.
 
 
   [1]: https://github.com/ErikEJ/EFCorePowerTools
-  [2]: https://github.com/aspnet/EntityFrameworkCore
+  [2]: https://github.com/dotnet/efcore
   [3]: http://github.com/bricelam/ImageResizer
   [4]: http://sourceforge.net/projects/orm
   [5]: https://github.com/xunit/xunit
@@ -44,3 +49,8 @@ a list of contributions that I've made to various projects.
   [11]: https://github.com/NetTopologySuite
   [12]: https://github.com/npgsql
   [13]: https://github.com/microsoft/PowerToys
+  [14]: https://github.com/efcore/EFCore.SqlServer.HierarchyId
+  [15]: https://github.com/efcore/EFCore.FSharp
+  [16]: https://github.com/efcore/EFCore.VisualBasic
+  [17]: https://github.com/bricelam/EFCore.TextTemplating
+  [18]: https://github.com/bricelam/EFCore.Pluralizer
