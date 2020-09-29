@@ -3,7 +3,7 @@ layout: post
 title: Moved to Microsoft PowerToys
 permalink: /ImageResizer/
 tags: image-resizer
-diable_comments: true
+comments: false
 ---
 
 Future versions of Image Resizer for Windows will be available as part of the Microsoft PowerToys.
