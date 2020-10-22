@@ -57,9 +57,10 @@ Docs
 * [SpatiaLite](http://www.gaia-gis.it/gaia-sins/spatialite-sql-4.3.0.html)
 
 Visual Studio Extensions
-=======================
+========================
 
 * [EF Core Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EFCorePowerTools)
+* [Entity Framework Visual Editor](https://marketplace.visualstudio.com/items?itemName=michaelsawczyn.EFDesigner)
 * [SQLite Toolbox](https://marketplace.visualstudio.com/items?itemName=ErikEJ.SQLServerCompactSQLiteToolbox)
 * [Devart T4 Editor](https://www.devart.com/t4-editor/)
 * [OData Connected Service](https://marketplace.visualstudio.com/items?itemName=laylaliu.ODataConnectedService)
