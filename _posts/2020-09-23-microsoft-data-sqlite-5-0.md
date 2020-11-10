@@ -4,7 +4,7 @@ title: Microsoft.Data.Sqlite 5.0
 tags: sqlite
 ---
 
-Microsoft.Data.Sqlite 5.0 RC1 is available now on [NuGet](https://www.nuget.org/packages/Microsoft.Data.Sqlite/5.0.0-rc.1.20451.13). These are likely the same bits will ship at [.NET Conf](https://www.dotnetconf.net/) on November 10th. Try it today and [let me know](https://github.com/dotnet/efcore/issues/new?labels=area-adonet-sqlite%2C+customer-reported&template=bug_report_sqlite.md) if you run into any issues.
+Microsoft.Data.Sqlite 5.0 is available now on [NuGet](https://www.nuget.org/packages/Microsoft.Data.Sqlite). Update today and [let me know](https://github.com/dotnet/efcore/issues/new?labels=area-adonet-sqlite%2C+customer-reported&template=bug_report_sqlite.md) if you run into any issues.
 
 Changes
 =======
