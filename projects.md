@@ -14,6 +14,7 @@ is a list of projects that I've actively participated on for a season or two.
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
   * [EFCore.TextTemplating][17] - Use T4 to customize the model
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
+* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021*)
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
@@ -22,6 +23,8 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
+* [SQLitePCLRaw][20] - Added keyword functions (*2020*)
 * [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
 * [EF Core Power Tools][1] - Packaged up the DACPAC reader for use with dotnet-ef (*2020*)
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
@@ -54,3 +57,6 @@ a list of contributions that I've made to various projects.
   [16]: https://github.com/efcore/EFCore.VisualBasic
   [17]: https://github.com/bricelam/EFCore.TextTemplating
   [18]: https://github.com/bricelam/EFCore.Pluralizer
+  [19]: https://github.com/madskristensen/PkgdefLanguage
+  [20]: https://github.com/ericsink/SQLitePCL.raw
+  [21]: https://github.com/bricelam/T4Language
