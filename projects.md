@@ -24,7 +24,9 @@ Part of being a good citizen in the open source community is regularly contribut
 a list of contributions that I've made to various projects.
 
 * [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
-* [SQLitePCLRaw][20] - Added keyword functions (*2020*)
+* [SQLitePCLRaw][20]
+  * Added Wasm libraries (*2022*)
+  * Added keyword functions (*2020*)
 * [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
 * [EF Core Power Tools][1] - Packaged up the DACPAC reader for use with dotnet-ef (*2020*)
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
