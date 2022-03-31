@@ -23,6 +23,7 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [.NET MAUI][22] - Fixed some layout issues on Windows (*2022*)
 * [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
 * [SQLitePCLRaw][20]
   * Added Wasm libraries (*2022*)
@@ -62,3 +63,4 @@ a list of contributions that I've made to various projects.
   [19]: https://github.com/madskristensen/PkgdefLanguage
   [20]: https://github.com/ericsink/SQLitePCL.raw
   [21]: https://github.com/bricelam/T4Language
+  [22]: https://github.com/dotnet/maui
