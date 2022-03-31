@@ -16,6 +16,7 @@ header_pages:
 paginate: 7
 paginate_path: "/page/:num/"
 show_excerpts: true
+future: true
 
 # Build settings
 theme: minima
