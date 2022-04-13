@@ -8,11 +8,13 @@ Channel 9's Seth Juarez had a chance to invade our team room and capture some ra
 their natural habitat. I got to show some of the improvements we've been making to Migrations. Here's the video.
 
 <div style="width: 100%; text-align: center;">
-  <iframe src="https://channel9.msdn.com/Blogs/Seth-Juarez/Migrations-in-Entity-Framework-7-with-Brice-Lambson/player"
-          width="640"
-          height="360"
+  <iframe src="https://www.youtube-nocookie.com/embed/HMokEvl_6TI"
+          width="560"
+          height="315"
           allowFullScreen
-          frameBorder="0">
+          frameBorder="0"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" >
   </iframe>
 </div>
 <br />
