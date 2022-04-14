@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Command Prompt is Ugly
+tags: miscellaneous
 ---
 
 As a developer, I spend a fair amount of time in Command Prompt. Let's face it, it's ugly.

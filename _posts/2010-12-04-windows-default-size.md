@@ -2,6 +2,7 @@
 layout: post
 title: A Window's Default Size
 permalink: /2010/12/windows-default-size.html
+tags: miscellaneous
 ---
 
 One of my biggest pet peeves is when, after switching resolutions, your window sizes become too small to work with. This

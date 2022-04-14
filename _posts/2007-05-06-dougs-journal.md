@@ -2,6 +2,7 @@
 layout: post
 title: Doug's Journal
 permalink: /2007/05/dougs-journal.html
+tags: miscellaneous
 ---
 
 ![Doug]({{ "/attachments/doug.jpg" | absolute_url }})

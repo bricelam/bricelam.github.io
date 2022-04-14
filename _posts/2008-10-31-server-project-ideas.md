@@ -2,6 +2,7 @@
 layout: post
 title: Server Project Ideas
 permalink: /2008/10/server-project-ideas.html
+tags: miscellaneous
 ---
 
 About a month ago, I switched my server from [Gentoo Linux][1] to [Windows Home Server][2]. I have quite enjoyed the new

@@ -2,6 +2,7 @@
 layout: post
 title: Quick Searches
 permalink: /2006/03/quick-searches.html
+tags: miscellaneous
 ---
 
 Quick Searches (also [Smart Keywords][1] or [Search Prefixes][2]) are supported by most web browsers. Here is a list of

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'C# Object Notation'
+tags: miscellaneous
 ---
 
 JavaScript Object Notation (JSON) is a subset of the JavaScript language used for the definition and exchange of data.

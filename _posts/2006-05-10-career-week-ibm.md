@@ -2,6 +2,7 @@
 layout: post
 title: "Career Week: IBM"
 permalink: /2006/05/career-week-ibm.html
+tags: miscellaneous
 ---
 
 ![IBM]({{ "/attachments/ibm.jpg" | absolute_url }})

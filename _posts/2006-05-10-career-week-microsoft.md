@@ -2,6 +2,7 @@
 layout: post
 title: "Career Week: Microsoft"
 permalink: /2006/05/career-week-microsoft.html
+tags: miscellaneous
 ---
 
 ![Microsoft]({{ "/attachments/microsoft.jpg" | absolute_url }})

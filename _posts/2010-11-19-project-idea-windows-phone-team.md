@@ -2,6 +2,7 @@
 layout: post
 title: "Project Idea: Windows Phone Team Explorer"
 permalink: /2010/11/project-idea-windows-phone-team.html
+tags: miscellaneous
 ---
 
 I recently got a Windows Phone, and I had a great idea for a project: a lightweight Team Foundation Server client. It

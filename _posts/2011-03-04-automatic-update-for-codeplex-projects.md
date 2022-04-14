@@ -2,6 +2,7 @@
 layout: post
 title: Automatic Update for CodePlex Projects
 permalink: /2011/03/automatic-update-for-codeplex-projects.html
+tags: miscellaneous
 ---
 
 I recently implemented a check for updates feature on my [Image Resizer for Windows][1] project, and wanted to share my

@@ -2,6 +2,7 @@
 layout: post
 title: "Career Week: ACS"
 permalink: /2006/05/career-week-acs.html
+tags: miscellaneous
 ---
 
 ![ACS]({{ "/attachments/acs.jpg" | absolute_url }})

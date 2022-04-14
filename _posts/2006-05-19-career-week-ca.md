@@ -2,6 +2,7 @@
 layout: post
 title: "Career Week: CA"
 permalink: /2006/05/career-week-ca.html
+tags: miscellaneous
 ---
 
 ![CA]({{ "/attachments/ca.jpg" | absolute_url }})

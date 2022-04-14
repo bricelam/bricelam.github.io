@@ -2,6 +2,7 @@
 layout: post
 title: "Career Week: Novell"
 permalink: /2006/05/career-week-novell.html
+tags: miscellaneous
 ---
 
 This week is career week at [Neumont University][1]. This means that at noon every day this week we'll have the
