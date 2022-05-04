@@ -8,7 +8,7 @@ Channel 9's Seth Juarez had a chance to invade our team room and capture some ra
 their natural habitat. I got to show some of the improvements we've been making to Migrations. Here's the video.
 
 <div style="width: 100%; text-align: center;">
-  <iframe src="https://www.youtube-nocookie.com/embed/HMokEvl_6TI"
+  <iframe src="https://www.youtube-nocookie.com/embed/HMokEvl_6TI?list=PL8Re3rFb5dyOF7XLElUZVsjpsxg25FXem"
           width="560"
           height="315"
           allowFullScreen

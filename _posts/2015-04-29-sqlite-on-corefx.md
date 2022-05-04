@@ -86,7 +86,7 @@ We also intend to add support for these frameworks.
 
 Yet another...
 ==============
-With so many other great frameworks like [System.Data.SQLite][3], [Mono.Data.Sqlite][4], [sqlite-net][5], [Portable
+With so many other great frameworks like [System.Data.SQLite][3], [Mono.Data.Sqlite][4], [SQLite-net][5], [Portable
 Class Library for SQLite][6], [SQLitePCL.raw][7], and more why create yet another one? The differentiating feature of
 [Microsoft.Data.Sqlite][1] is that it implements the [System.Data.Common][2] contract which is built on top of [.NET
 Core][8].
