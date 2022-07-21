@@ -14,7 +14,8 @@ is a list of projects that I've actively participated on for a season or two.
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
   * [EFCore.TextTemplating][17] - Use T4 to customize the model
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
-* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021*)
+* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
+* [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
@@ -33,8 +34,8 @@ a list of contributions that I've made to various projects.
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
 * [Npgsql][12] - Fixed a bug in geometry literals in the EF Core provider (*2018*)
 * [xUnit.net][5]
-    * Added support for .NET Core (*2014*)
-    * Added trait-based filtering to the MSBuild runner (*2013*)
+  * Added support for .NET Core (*2014*)
+  * Added trait-based filtering to the MSBuild runner (*2013*)
 * [System.Data.SQLite][6] - Helped add support for Entity Framework 6 (*2014*)
 * [Git for Windows][7] - Helped fix a bug with line ending normalization (*2013*)
 * [Chinook Database][8] - Added support for PostgreSQL (*2012*)
@@ -64,3 +65,4 @@ a list of contributions that I've made to various projects.
   [20]: https://github.com/ericsink/SQLitePCL.raw
   [21]: https://github.com/bricelam/T4Language
   [22]: https://github.com/dotnet/maui
+  [23]: https://github.com/bricelam/VS.Data.Sqlite
