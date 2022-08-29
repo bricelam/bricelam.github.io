@@ -24,6 +24,7 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [T4 Support for VS Code][24] - Enabled highlighting files with the .t4 extension (*2022*)
 * [.NET MAUI][22] - Fixed some layout issues on Windows (*2022*)
 * [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
 * [SQLitePCLRaw][20]
@@ -66,3 +67,4 @@ a list of contributions that I've made to various projects.
   [21]: https://github.com/bricelam/T4Language
   [22]: https://github.com/dotnet/maui
   [23]: https://github.com/bricelam/VS.Data.Sqlite
+  [24]: https://github.com/zbecknell/t4-support
