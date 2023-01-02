@@ -27,11 +27,18 @@ layout: default
   </div>
 
   {%- if page.comments != false and jekyll.environment == "production" -%}
-  <script src="https://utteranc.es/client.js"
-          repo="bricelam/bricelam.github.io"
-          issue-term="og:title"
-          label="comment"
-          theme="github-light"
+  <script src="https://giscus.app/client.js"
+          data-repo="bricelam/bricelam.github.io"
+          data-repo-id="MDEwOlJlcG9zaXRvcnkyMjQwMDQyOA=="
+          data-category="General"
+          data-category-id="DIC_kwDOAVXNrM4CTXt9"
+          data-mapping="og:title"
+          data-strict="0"
+          data-reactions-enabled="0"
+          data-emit-metadata="0"
+          data-input-position="bottom"
+          data-theme="light"
+          data-lang="en"
           crossorigin="anonymous"
           async>
   </script>
