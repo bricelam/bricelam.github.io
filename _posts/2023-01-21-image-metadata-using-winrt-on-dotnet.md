@@ -61,7 +61,7 @@ Unfortunately, this doesn't tell you which name belongs to which face. To get th
 
 There are two main ways this information is stored. The first metadata standard for it was Microsoft Photo (you guessed it, made popular by our beloved Windows Live Photo Gallery). Later, the big tech companies came together as the Metadata Working Group to create [another standard](https://xkcd.com/927/) that "fixed" all their complaints about the first one. So, now we always have two places to look instead of one.
 
-Here's a method to query the metadata using [BitmapDecoder.BitmapProperties](https://learn.microsoft.com/uwp/api/windows.graphics.imaging.bitmapdecoder.bitmapproperties). Fun fact, this API is backed by the [Windows Imaging Component](https://learn.microsoft.com/windows/win32/wic/-wic-about-windows-imaging-codec) (or WIC) so every image format imaginable is supported. Well, so long as long as you have a codec for it installed anyway.
+Here's a method to query the metadata using [BitmapDecoder.BitmapProperties](https://learn.microsoft.com/uwp/api/windows.graphics.imaging.bitmapdecoder.bitmapproperties). Fun fact, this API is backed by the [Windows Imaging Component](https://learn.microsoft.com/windows/win32/wic/-wic-about-windows-imaging-codec) (or WIC) so every image format imaginable is supported. Well, so long as you have a codec installed for it anyway.
 
 ```cs
 static async Task<IReadOnlyList<(string Name, Rect Area)>> GetPeopleAsync(IStorageFile file)
@@ -139,7 +139,7 @@ foreach (var person in people)
     Console.WriteLine($"    {person.Name} [{person.Area}]");
 ```
 
-One interesting thing to note is that the x, y, width, and height values are always between 0 and 1. That's because they're percentages of the photo's actual with and height. This allows the metadata values to remain the same even if the image is resized. If you want to draw the rectangles, you'd have to multiply the values by the image's width and height.
+One interesting thing to note is that the x, y, width, and height values are always between 0 and 1. That's because they're percentages of the photo's actual with and height. This allows the metadata values to remain the same even if the image is resized. If you want to draw the rectangles, multiply the values by the image's width and height.
 
 ```cs
 var rectToDraw = new Rect(
