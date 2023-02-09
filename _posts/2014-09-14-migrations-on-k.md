@@ -2,6 +2,7 @@
 layout: post
 title: 'EF Core Migrations: .NET CLI Commands'
 tags: entity-framework
+redirect_from: /2014/09/14/migrations-on-k/
 ---
 
 One of the [new platforms][1] that we're targeting in Entity Framework Core is [ASP.NET Core][2]. With this new platform

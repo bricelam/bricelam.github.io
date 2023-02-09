@@ -2,6 +2,7 @@
 layout: post
 title: 'EF Core Migrations: NuGet Commands'
 tags: entity-framework
+redirect_from: /2014/10/22/ef7-nuget-commands/
 ---
 
 With Entity Framework Core comes the great opportunity to improve upon EF's legacy by incorporating all the lessons
