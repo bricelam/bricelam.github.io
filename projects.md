@@ -7,15 +7,16 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
-* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
 * [Entity Framework][2] - An object-relational mapper for .NET (*2010 to present*)
   * [EntityFrameworkCore.SqlServer.HierarchyId][14] - Adds SQL Server hierarchyid support
   * [EntityFrameworkCore.FSharp][15] - Adds F# support
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
   * [EFCore.TextTemplating][17] - Use T4 to customize the model
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
-* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
+* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
 * [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
+* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
+* [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to present*)
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
@@ -68,3 +69,4 @@ a list of contributions that I've made to various projects.
   [22]: https://github.com/dotnet/maui
   [23]: https://github.com/bricelam/VS.Data.Sqlite
   [24]: https://github.com/zbecknell/t4-support
+  [25]: https://github.com/bricelam/FreezeFrame
