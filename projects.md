@@ -29,6 +29,7 @@ a list of contributions that I've made to various projects.
 * [.NET MAUI][22] - Fixed some layout issues on Windows (*2022*)
 * [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
 * [SQLitePCLRaw][20]
+  * Helped enable math functions (*2023*)
   * Added Wasm libraries (*2022*)
   * Added keyword functions (*2020*)
 * [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
@@ -47,10 +48,10 @@ a list of contributions that I've made to various projects.
 
   [1]: https://github.com/ErikEJ/EFCorePowerTools
   [2]: https://github.com/dotnet/efcore
-  [3]: http://github.com/bricelam/ImageResizer
-  [4]: http://sourceforge.net/projects/orm
+  [3]: https://github.com/bricelam/ImageResizer
+  [4]: https://github.com/ormsolutions/NORMA
   [5]: https://github.com/xunit/xunit
-  [6]: http://system.data.sqlite.org
+  [6]: https://system.data.sqlite.org
   [7]: https://github.com/git-for-windows/git
   [8]: https://github.com/lerocha/chinook-database
   [9]: https://github.com/OpenRIAServices
