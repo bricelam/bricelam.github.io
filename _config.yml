@@ -2,12 +2,17 @@
 title: Brice's Blog
 description: Highlighting some of my more technical adventures
 application_insights: bc55e726-6559-4f0c-8c4d-85be3d47ec33
-author: Brice Lambson
-email: brice@bricelam.net
-github_username: bricelam
-twitter_username: bricelambs
-youtube_channel: UCKQoPIhSjqnnq20sD9fGbeA
-rss: RSS
+author:
+  name: Brice Lambson
+  email: brice@bricelam.net
+minima:
+  social_links:
+    - platform: github
+      user_url: https://github.com/bricelam
+    - platform: twitter
+      user_url: https://twitter.com/bricelambs
+    - platform: youtube
+      user_url: https://www.youtube.com/channel/UCKQoPIhSjqnnq20sD9fGbeA
 header_pages:
   - about.md
   - projects.md
