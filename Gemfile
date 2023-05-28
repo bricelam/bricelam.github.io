@@ -4,11 +4,11 @@ gem 'jekyll', '~> 3.9.3'
 gem 'minima', '~> 2.0'
 
 group :jekyll_plugins do
-  gem 'jekyll-redirect-from', '0.16.0'
-  gem 'jekyll-sitemap', '1.4.0'
-  gem 'jekyll-paginate', '1.1.0'
+  gem 'jekyll-redirect-from'
+  gem 'jekyll-sitemap'
+  gem 'jekyll-paginate'
   gem 'jemoji', '0.12.0'
-  gem 'jekyll-mentions', '1.6.0'
+  gem 'jekyll-mentions'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
