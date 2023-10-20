@@ -8,7 +8,7 @@ Nearly a decade ago, I wrote about how [Command Prompt was ugly]({% post_url 201
 
 The first time I remember thinking, "Wow, this terminal is beautiful!" was twenty years ago when I first installed [Gentoo Linux](https://www.gentoo.org/). It was a high-resolution (well, for the time), framebuffered terminal, and something about the blue and green hues immediately sparked joy.
 
-Years later, researched it, and it turned out that there wasn't anything special about Gentoo's color scheme. It's just the default [VGA text mode](https://en.wikipedia.org/wiki/VGA_text_mode) palette. But, it was so much more beautiful than the vintage Windows palette was.
+Years later, I researched it, and it turned out that there wasn't anything special about Gentoo's color scheme. It's just the default [VGA text mode](https://en.wikipedia.org/wiki/VGA_text_mode) palette. But, it was so much more beautiful than the vintage Windows palette.
 
 Vintage                                                            | VGA
 :-----------------------------------------------------------------:|:---:
@@ -16,19 +16,19 @@ Vintage                                                            | VGA
 
 Those bright colors just look so much better to me!
 
-Another thing I love about the VGA pallet is the orange they used instead of that ugly olive color. *None* of the preset color schemes in Windows Terminal have duplicated this improvement. All the dark yellow hues are still kinda ugly. What a shame!
+Another thing I love about the VGA pallet is the orange it uses instead of that ugly olive color. *None* of the preset color schemes in Windows Terminal have duplicated this improvement. All the dark yellow hues are still kinda ugly. What a shame!
 
 | Campbell                                                             |
 |:--------------------------------------------------------------------:|
 | ![Campbell scheme]({{ "/attachments/Campbell.png" | absolute_url }}) |
 
-There is one thing, however, that the Windows Terminal schemes do better. Some of 'em use a lovely shade of purple for their dark magenta hue. So, in order to create the perfect color scheme, I mathematically reverse engineered the formula the VGA palette uses to shift dark yellow to orange, and I used it to shift the dark magenta to purple. Behold!
+There is one thing, however, that the Windows Terminal schemes do better. Some of 'em use a lovely shade of purple for their dark magenta hue. So, in order to create the perfect color scheme, I mathematically reverse engineered the formula the VGA palette uses to shift dark yellow to orange, and I used it to shift dark magenta to purple. Behold!
 
 | Brice's Color Scheme                                                        |
 |:---------------------------------------------------------------------------:|
 | ![Brice's scheme]({{ "/attachments/BriceColorScheme.png" | absolute_url }}) |
 
-Oh, I also created this PowerShell script you can use to install it.
+Oh, I also created this PowerShell script that you can use to install it.
 
 ```powershell
 $settingsPath = "$env:LOCALAPPDATA\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState\settings.json"
