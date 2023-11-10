@@ -8,11 +8,12 @@ During my life as a software engineer, I've had the privilege of working on vari
 is a list of projects that I've actively participated on for a season or two.
 
 * [Entity Framework][2] - An object-relational mapper for .NET (*2010 to present*)
-  * [EntityFrameworkCore.SqlServer.HierarchyId][14] - Adds SQL Server hierarchyid support
+  * [EFCore.NamingConventions][26] - Alternative table name casing conventions
+  * [EFCore.CheckConstraints][27] - Adds CHECK constraints for validation attributes
   * [EntityFrameworkCore.FSharp][15] - Adds F# support
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
-  * [EFCore.TextTemplating][17] - Use T4 to customize the model
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
+  * [EntityFrameworkCore.ConfigurationManager][28] - Adds support for App.config
 * [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
 * [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
 * [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
@@ -25,13 +26,14 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
-* [T4 Support for VS Code][24] - Enabled highlighting files with the .t4 extension (*2022*)
-* [.NET MAUI][22] - Fixed some layout issues on Windows (*2022*)
-* [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
 * [SQLitePCLRaw][20]
+  * Added packages for SQLite3 Multiple Ciphers (*2023*)
   * Helped enable math functions (*2023*)
   * Added Wasm libraries (*2022*)
   * Added keyword functions (*2020*)
+* [T4 Support for VS Code][24] - Enabled highlighting files with the .t4 extension (*2022*)
+* [.NET MAUI][22] - Fixed some layout issues on Windows (*2022*)
+* [Pkgdef Language][19] - Enabled comment/uncomment selection (*2021*)
 * [Microsoft PowerToys][13] - Added Image Resizer (*2020*)
 * [EF Core Power Tools][1] - Packaged up the DACPAC reader for use with dotnet-ef (*2020*)
 * [NetTopologySuite][11] - Created the SqlServerBytes IO module (*2018*)
@@ -59,10 +61,8 @@ a list of contributions that I've made to various projects.
   [11]: https://github.com/NetTopologySuite
   [12]: https://github.com/npgsql
   [13]: https://github.com/microsoft/PowerToys
-  [14]: https://github.com/efcore/EFCore.SqlServer.HierarchyId
   [15]: https://github.com/efcore/EFCore.FSharp
   [16]: https://github.com/efcore/EFCore.VisualBasic
-  [17]: https://github.com/bricelam/EFCore.TextTemplating
   [18]: https://github.com/bricelam/EFCore.Pluralizer
   [19]: https://github.com/madskristensen/PkgdefLanguage
   [20]: https://github.com/ericsink/SQLitePCL.raw
@@ -71,3 +71,6 @@ a list of contributions that I've made to various projects.
   [23]: https://github.com/bricelam/VS.Data.Sqlite
   [24]: https://github.com/zbecknell/t4-support
   [25]: https://github.com/bricelam/FreezeFrame
+  [26]: https://github.com/efcore/EFCore.NamingConventions
+  [27]: https://github.com/efcore/EFCore.CheckConstraints
+  [28]: https://github.com/efcore/EFCore.ConfigurationManager
