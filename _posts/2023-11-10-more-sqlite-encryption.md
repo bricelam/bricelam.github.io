@@ -39,7 +39,7 @@ dotnet add package sqlite-net-base
 dotnet add package SQLitePCLRaw.bundle_e_sqlite3mc
 ```
 
-SQLite-net has a continent `key` parameter you can pass to the connection string.
+SQLite-net has a convenient `key` parameter you can pass to the connection string.
 
 ```cs
 using SQLite;
