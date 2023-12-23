@@ -7,17 +7,17 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
-* [Entity Framework][2] - An object-relational mapper for .NET (*2010 to present*)
+* [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
+* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
+* [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to present*)
+* [Entity Framework][2] - An object-relational mapper for .NET (*2010 to 2023*)
   * [EFCore.NamingConventions][26] - Alternative table name casing conventions
   * [EFCore.CheckConstraints][27] - Adds CHECK constraints for validation attributes
   * [EntityFrameworkCore.FSharp][15] - Adds F# support
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
   * [EntityFrameworkCore.ConfigurationManager][28] - Adds support for App.config
-* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to present*)
-* [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
-* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
-* [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to present*)
+* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to 2023*)
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
