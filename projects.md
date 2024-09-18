@@ -26,6 +26,9 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [Roslyn][17] - Fixed seealso XML generation (*2024*)
+* [EF Core][2] - Added SQL translations for Order and OrderDescending (*2024*)
+* [WindowsFormsLifetime][14] - Enabled Minimal API support without the Web SDK (*2024*)
 * [SQLitePCLRaw][20]
   * Added packages for SQLite3 Multiple Ciphers (*2023*)
   * Helped enable math functions (*2023*)
@@ -61,8 +64,10 @@ a list of contributions that I've made to various projects.
   [11]: https://github.com/NetTopologySuite
   [12]: https://github.com/npgsql
   [13]: https://github.com/microsoft/PowerToys
+  [14]: https://github.com/alex-oswald/WindowsFormsLifetime
   [15]: https://github.com/efcore/EFCore.FSharp
   [16]: https://github.com/efcore/EFCore.VisualBasic
+  [17]: https://github.com/dotnet/roslyn
   [18]: https://github.com/bricelam/EFCore.Pluralizer
   [19]: https://github.com/madskristensen/PkgdefLanguage
   [20]: https://github.com/ericsink/SQLitePCL.raw
