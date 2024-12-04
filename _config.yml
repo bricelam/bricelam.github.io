@@ -9,8 +9,8 @@ minima:
   social_links:
     - platform: github
       user_url: https://github.com/bricelam
-    - platform: twitter
-      user_url: https://twitter.com/bricelambs
+    - platform: bluesky
+      user_url: https://bsky.app/profile/bricelam.net
     - platform: youtube
       user_url: https://www.youtube.com/channel/UCKQoPIhSjqnnq20sD9fGbeA
 header_pages:

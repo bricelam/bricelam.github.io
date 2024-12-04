@@ -1,14 +1,14 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 4.3.2'
+gem 'jekyll', '~> 4.3.4'
 
-gem 'minima', git: 'https://github.com/jekyll/minima.git', ref: '2863624'
+gem 'minima', git: 'https://github.com/jekyll/minima.git', ref: '6b9b78d'
 
 group :jekyll_plugins do
   gem 'jekyll-redirect-from'
   gem 'jekyll-sitemap'
   gem 'jekyll-paginate'
-  gem 'jemoji', '0.12.0'
+  gem 'jemoji'
   gem 'jekyll-mentions'
 end
 
@@ -20,7 +20,7 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem 'wdm', '~> 0.1.0', :install_if => Gem.win_platform?
+gem 'wdm', '~> 0.1', :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem 'kramdown-parser-gfm'
 
