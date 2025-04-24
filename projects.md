@@ -26,6 +26,7 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [H.NotifyIcon][30] - Automatically load Light/Dark resources (*2025*)
 * [Power Fx][29] - Improved NSwag compatibility (*2024*)
 * [Roslyn][17] - Fixed seealso XML generation (*2024*)
 * [EF Core][2] - Added SQL translations for Order and OrderDescending (*2024*)
@@ -81,3 +82,4 @@ a list of contributions that I've made to various projects.
   [27]: https://github.com/efcore/EFCore.CheckConstraints
   [28]: https://github.com/efcore/EFCore.ConfigurationManager
   [29]: https://github.com/microsoft/Power-Fx
+  [30]: https://github.com/HavenDV/H.NotifyIcon
