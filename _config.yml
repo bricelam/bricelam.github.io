@@ -6,21 +6,25 @@ author:
   name: Brice Lambson
   email: brice@bricelam.net
 minima:
+  nav_pages:
+    - about.md
+    - projects.md
+    - tags/index.html
+    - links.md
+  show_excerpts: true
   social_links:
-    - platform: github
-      user_url: https://github.com/bricelam
-    - platform: bluesky
-      user_url: https://bsky.app/profile/bricelam.net
-    - platform: youtube
-      user_url: https://www.youtube.com/channel/UCKQoPIhSjqnnq20sD9fGbeA
-header_pages:
-  - about.md
-  - projects.md
-  - tags/index.html
-  - links.md
+    - title: GitHub
+      icon: github
+      url: https://github.com/bricelam
+    - title: Bluesky
+      icon: bluesky
+      url: https://bsky.app/profile/bricelam.net
+    - title: YouTube
+      icon: youtube
+      url: https://www.youtube.com/channel/UCKQoPIhSjqnnq20sD9fGbeA
+
 paginate: 7
 paginate_path: "/page/:num/"
-show_excerpts: true
 future: true
 
 # Build settings
