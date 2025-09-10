@@ -7,6 +7,7 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
+* [Bricelam.PowerFx.Linq][31] - Use Power Fx inside LINQ (*2025 to present*)
 * [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
 * [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
 * [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to present*)
@@ -83,3 +84,4 @@ a list of contributions that I've made to various projects.
   [28]: https://github.com/efcore/EFCore.ConfigurationManager
   [29]: https://github.com/microsoft/Power-Fx
   [30]: https://github.com/HavenDV/H.NotifyIcon
+  [31]: https://github.com/bricelam/Bricelam.PowerFx.Linq
