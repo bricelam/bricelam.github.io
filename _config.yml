@@ -16,9 +16,9 @@ minima:
     - title: GitHub
       icon: github
       url: https://github.com/bricelam
-    - title: Bluesky
-      icon: bluesky
-      url: https://bsky.app/profile/bricelam.net
+    - title: X
+      icon: x-twitter
+      url: https://x.com/bricelambs
     - title: YouTube
       icon: youtube
       url: https://www.youtube.com/channel/UCKQoPIhSjqnnq20sD9fGbeA
