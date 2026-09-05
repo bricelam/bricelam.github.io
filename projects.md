@@ -7,10 +7,12 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
+* [py2docfx_template][32] - docfx templates for py2docfx (*2026*)
 * [Bricelam.PowerFx.Linq][31] - Use Power Fx inside LINQ (*2025 to present*)
-* [VisualStudio.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to present*)
-* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to present*)
-* [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to present*)
+* [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to 2025*)
+* [T4 Language][21] - Adds basic language support for .tt files to Visual Studio (*2021 to 2026*)
+* [VS.Data.Sqlite][23] - A DDEX provider for Microsoft.Data.Sqlite (*2020 to 2026*)
+* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to 2023*)
 * [Entity Framework][2] - An object-relational mapper for .NET (*2010 to 2023*)
   * [EFCore.NamingConventions][26] - Alternative table name casing conventions
   * [EFCore.CheckConstraints][27] - Adds CHECK constraints for validation attributes
@@ -18,7 +20,6 @@ is a list of projects that I've actively participated on for a season or two.
   * [EntityFrameworkCore.VisualBasic][16] - Adds Visual Basic support
   * [Bricelam.EntityFrameworkCore.Pluralizer][18] - An EF6-compatible pluralizer
   * [EntityFrameworkCore.ConfigurationManager][28] - Adds support for App.config
-* [Microsoft.Data.Sqlite][2] - A .NET Standard ADO.NET provider for SQLite (*2014 to 2023*)
 * [Image Resizer for Windows][3] - A utility for resizing image files (*2008 to 2020*)
 * [Natural Object-Role Modeling Architect][4] - A data modeling tool for Visual Studio (*2006 to 2007*)
 
@@ -27,13 +28,14 @@ Contributions
 Part of being a good citizen in the open source community is regularly contributing to other projects. The following is
 a list of contributions that I've made to various projects.
 
+* [ComicMeta][33] - Support .cb7 and .cbt files (*2025*)
 * [H.NotifyIcon][30] - Automatically load Light/Dark resources (*2025*)
 * [Power Fx][29] - Improved NSwag compatibility (*2024*)
 * [Roslyn][17] - Fixed seealso XML generation (*2024*)
 * [EF Core][2] - Added SQL translations for Order and OrderDescending (*2024*)
 * [WindowsFormsLifetime][14] - Enabled Minimal API support without the Web SDK (*2024*)
+* [SQLite3MultipleCiphers-NuGet][34] - Initial implementation (*2023*)
 * [SQLitePCLRaw][20]
-  * Added packages for SQLite3 Multiple Ciphers (*2023*)
   * Helped enable math functions (*2023*)
   * Added Wasm libraries (*2022*)
   * Added keyword functions (*2020*)
@@ -85,3 +87,6 @@ a list of contributions that I've made to various projects.
   [29]: https://github.com/microsoft/Power-Fx
   [30]: https://github.com/HavenDV/H.NotifyIcon
   [31]: https://github.com/bricelam/Bricelam.PowerFx.Linq
+  [32]: https://github.com/bricelam/py2docfx_template
+  [33]: https://github.com/OlivierMaire/ComicMeta
+  [34]: https://github.com/utelle/SQLite3MultipleCiphers-NuGet
