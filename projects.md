@@ -7,6 +7,7 @@ permalink: /projects/
 During my life as a software engineer, I've had the privilege of working on various open source projects. The following
 is a list of projects that I've actively participated on for a season or two.
 
+* [EFCore.Snowflake][35] - An Entity Framework Core provider for Snowflake (*2026 to present*)
 * [py2docfx_template][32] - docfx templates for py2docfx (*2026*)
 * [Bricelam.PowerFx.Linq][31] - Use Power Fx inside LINQ (*2025 to present*)
 * [FreezeFrame][25] - Advance videos frame by frame and save the best ones as pictures (*2022 to 2025*)
@@ -90,3 +91,4 @@ a list of contributions that I've made to various projects.
   [32]: https://github.com/bricelam/py2docfx_template
   [33]: https://github.com/OlivierMaire/ComicMeta
   [34]: https://github.com/utelle/SQLite3MultipleCiphers-NuGet
+  [35]: https://github.com/Sielnix/EFCore.Snowflake
